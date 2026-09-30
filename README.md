@@ -1,27 +1,39 @@
 # Sales Profit Analysis
 
-End-to-end analysis of transactional sales orders: **clean the table**, test whether profit differs by category, then **predict order profit** from information that would be known at quote time.
+Quote-time profit prediction and categorical inference on **958 orders** (Jan–Jun 2026). The model estimates `Profit` from information known when the order is placed — product, city, channel, quantity, list price, discount — **without unit cost or post-sale accounting fields**.
 
-The scientifically valid ML problem is **not** reconstructing `Profit` from cost and revenue. That accounting identity has MAE ≈ 0.002 TL (rounding only). After those columns are removed, the remaining task is a genuine regression problem.
+Everything runs **offline**. No API keys, tokens, or cloud calls.
 
-Everything runs **offline**. There are no API keys, tokens, environment variables, or cloud calls.
+## What this project found
+
+On a chronological hold-out (215 later orders, 26 May–30 Jun 2026), tuned **XGBoost** estimates order profit with **MAE 279 TL**. A product-average guess is off by **1,026 TL**. That is **747 TL closer per order**, or about **161,000 TL less total absolute error** on the test month.
+
+Median error falls from **587 TL** (product average) to **69 TL**. Test R² is **0.77**. Extra Trees is worse (MAE 323 TL). Reconstructing profit from cost and revenue is not a model: that identity has MAE ≈ 0.002 TL and is excluded on purpose.
+
+| Decision | Evidence |
+|----------|----------|
+| Put the model in front of delayed cost accounting | 747 TL / order better than the best naive baseline |
+| Grow furniture / Office Chair, not stationery | Product explains **27%** of profit variance; Office Chair vs Pen Set ≈ **3,791 TL** mean gap; Furniture vs Stationery ≈ **3,708 TL** |
+| Prioritise corporate accounts | Corporate mean profit is **761 TL** above Individual and **725 TL** above SME (FDR-significant) |
+| Do **not** treat city or region as a profit lever | City and region are **not significant** after permutation ANOVA + BH-FDR (η² ≈ 1%) |
+| Store vs online is a weak signal | Channel is significant unadjusted, **not** after FDR (η² = 0.6%; Store vs Dealer ≈ 336 TL) |
+
+SHAP agrees with the tests: commercial size (`list_revenue`, discount, quantity, price) and product identity dominate. Calendar flags are secondary in a six-month window.
+
+**How to read the money numbers.** The 161,000 TL figure is the sum of absolute prediction error avoided versus a product-mean rule on 215 unseen orders. It is the value of a better **quote-time expectation**, not cash booked by the model. Use it for mix reviews, discount simulation, and flagging fragile quotes. When unit cost is already known, use the accounting identity instead.
 
 ## Results at a glance
 
 | Item | Value |
 |------|--------|
-| Dataset | 958 orders, 18 raw columns, 2026-01-01 to 2026-06-30 |
-| Target | `Profit` (order profit, TL) |
-| Train / test | Chronological: 743 / 215, cutoff 2026-05-26 |
-| Selected model | **XGBoost** (Optuna-tuned) |
-| Test MAE | **279.14 TL** |
-| Extra Trees test MAE | 322.78 TL |
-| Product-mean baseline MAE | 1026.12 TL |
-| Mean baseline MAE | 1281.71 TL |
-| Test R² (XGBoost) | 0.753 |
-| Strongest statistical factor | `Product` (η² ≈ 0.27); `City` / `Region` not significant after FDR |
-
-Lift vs product-mean baseline: about **747 TL MAE per order** on the held-out period.
+| Dataset | 958 orders, Jan–Jun 2026 |
+| Target | `Profit` (TL) |
+| Split | Train 743 / test 215 (cutoff 2026-05-26) |
+| Selected model | **XGBoost** (Optuna + `TimeSeriesSplit`) |
+| Test MAE | **279 TL** (Extra Trees 323; product-mean 1,026; overall mean 1,282) |
+| Test R² | **0.77** |
+| Test-month error lift | **~161,000 TL** vs product-mean baseline |
+| Strongest factor | `Product` (η² ≈ 0.27); `City` / `Region` not significant after FDR |
 
 ## What this repo contains
 
