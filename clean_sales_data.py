@@ -23,8 +23,8 @@ ROOT = Path(__file__).parent
 SRC_CANDIDATES = ("raw_sales_data.xlsx", "SatışVerisi.xlsx")
 OUT_NAME = "cleaned_sales_data.xlsx"
 LOG_NAME = "cleaning_summary.json"
-OUT_XLSX = ROOT / OUT_NAME
-OUT_LOG = ROOT / LOG_NAME
+OUT_XLSX = ROOT / "data" / OUT_NAME
+OUT_LOG = ROOT / "data" / LOG_NAME
 
 COLUMN_RENAME = {
     "Siparis_ID": "Order_ID",
@@ -343,6 +343,7 @@ def main():
     assert columns[0] == "Order_ID"
     assert "Customer_ID" not in columns
 
+    OUT_XLSX.parent.mkdir(parents=True, exist_ok=True)
     data.to_excel(OUT_XLSX, index=False)
 
     summary = {

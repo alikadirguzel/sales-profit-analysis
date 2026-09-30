@@ -1,0 +1,98 @@
+{
+  "dataset": "synthetic retail orders for portfolio / methodology demonstration",
+  "n_rows": 958,
+  "cutoff": "2026-05-26",
+  "n_train": 743,
+  "n_test": 215,
+  "selected_model": "XGBoost",
+  "xgb_cv_mae": 338.7382446700616,
+  "et_cv_mae": 402.948184667241,
+  "xgb_params": {
+    "n_estimators": 243,
+    "max_depth": 5,
+    "learning_rate": 0.05544514534944357,
+    "subsample": 0.7020471136043668,
+    "colsample_bytree": 0.991594186044385,
+    "min_child_weight": 3,
+    "gamma": 1.736881261874429,
+    "reg_alpha": 0.726775165034454,
+    "reg_lambda": 0.5496358312083061
+  },
+  "et_params": {
+    "max_depth": 20,
+    "n_estimators": 476,
+    "min_samples_leaf": 2,
+    "min_samples_split": 5,
+    "max_features": 0.5
+  },
+  "oracle_identity": {
+    "MAE": 0.0015944676410900931,
+    "MSE": 5.46477035472223e-06,
+    "RMSE": 0.0023376848279274584,
+    "R2": 0.999999999998592,
+    "MedianAE": 0.0010000000000118803,
+    "sMAPE": 0.0006311555939080425,
+    "MAPE_gt1": 0.0006311627822710023
+  },
+  "test_metrics": {
+    "Mean baseline": {
+      "MAE": 1281.7059205608937,
+      "MSE": 3377430.108443261,
+      "RMSE": 1837.7785798194682,
+      "R2": -0.004399357886496702,
+      "MedianAE": 1016.5833647375505,
+      "sMAPE": 92.52922941889823,
+      "MAPE_gt1": 462.7525583328817
+    },
+    "Product-mean baseline": {
+      "MAE": 1026.1240594577937,
+      "MSE": 2626781.2119419775,
+      "RMSE": 1620.7347753232104,
+      "R2": 0.21883287651542005,
+      "MedianAE": 587.4109999999998,
+      "sMAPE": 74.14633937837067,
+      "MAPE_gt1": 447.50815671453773
+    },
+    "Extra Trees": {
+      "MAE": 322.59476486454736,
+      "MSE": 850018.9468909918,
+      "RMSE": 921.9647210663712,
+      "R2": 0.7472165353431441,
+      "MedianAE": 83.26462359943912,
+      "sMAPE": 22.319605519425775,
+      "MAPE_gt1": 202.0563191958113
+    },
+    "XGBoost": {
+      "MAE": 273.57960485981783,
+      "MSE": 641760.8228802673,
+      "RMSE": 801.0997583823548,
+      "R2": 0.809149519687691,
+      "MedianAE": 71.37599609375002,
+      "sMAPE": 21.97184495522188,
+      "MAPE_gt1": 81.78897684504093
+    }
+  },
+  "permutation_top": {
+    "list_revenue": 1394.9036145089526,
+    "discount_value_unit": 376.15811503902705,
+    "Product": 125.65584445775721,
+    "Unit_Price_TL": 98.09633248774507,
+    "Discount_Rate": 94.90852500047909,
+    "net_unit_price": 88.34035845496601,
+    "Quantity": 75.2049588635822,
+    "Payment_Method": 5.798094526849797
+  },
+  "shap_top": {
+    "list_revenue": 1188.1170654296875,
+    "discount_value_unit": 357.36639404296875,
+    "Discount_Rate": 130.1670684814453,
+    "Quantity": 129.38385009765625,
+    "net_unit_price": 108.85604858398438,
+    "Unit_Price_TL": 94.64116668701172,
+    "Product_Monitor 27": 86.09394836425781,
+    "Product_Monitor 24": 42.760799407958984,
+    "Product_Office Chair": 42.347599029541016,
+    "Product_Desk Lamp": 18.451595306396484
+  },
+  "mae_lift_vs_product_mean": 752.5444545979758
+}
