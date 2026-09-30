@@ -11,7 +11,7 @@ env/
 *.key
 secrets/
 
-temizleme_ozeti.json
+cleaning_summary.json
 data.mat
 *.asv
 

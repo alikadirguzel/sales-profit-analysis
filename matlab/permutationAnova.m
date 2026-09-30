@@ -3,10 +3,10 @@ function perm = permutationAnova(y, gidx, nPermutations, alpha)
 %
 %   Observed F is computed from the real group labels. Then the labels are
 %   randomly permuted nPermutations times, breaking any systematic association
-%   between group membership and Kar while preserving group sizes and the
-%   Kar values themselves.
+%   between group membership and Profit while preserving group sizes and the
+%   Profit values themselves.
 %
-%   H0: There is no systematic group effect on the Kar distribution.
+%   H0: There is no systematic group effect on the Profit distribution.
 %       Similar F values can arise by chance after shuffling labels.
 %   H1: There is a systematic difference among groups.
 %

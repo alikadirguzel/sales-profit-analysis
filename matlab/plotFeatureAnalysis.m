@@ -12,7 +12,7 @@ function plotFeatureAnalysis(R, outDir, figVisible, targetVar)
         figVisible = 'off';
     end
     if nargin < 4 || isempty(targetVar)
-        targetVar = 'Kar';
+        targetVar = 'Profit';
     end
 
     if ~isfolder(outDir)

@@ -57,9 +57,9 @@ function summaryTbl = summarizeDataset(data, targetVar, features)
     if ~ismember(targetVar, vars)
         error('summarizeDataset:NoTarget', 'Target variable "%s" was not found.', targetVar);
     end
-    kar = data.(targetVar);
-    fprintf('\nTarget "%s" class: %s   numeric: %s\n', targetVar, class(kar), ...
-        yesno(isnumeric(kar) || islogical(kar)));
+    yTarget = data.(targetVar);
+    fprintf('\nTarget "%s" class: %s   numeric: %s\n', targetVar, class(yTarget), ...
+        yesno(isnumeric(yTarget) || islogical(yTarget)));
 
     fprintf('\nRequested categorical features and number of levels:\n');
     for i = 1:numel(features)

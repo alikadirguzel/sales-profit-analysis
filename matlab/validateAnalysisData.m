@@ -1,8 +1,8 @@
 function [data, notes] = validateAnalysisData(data, targetVar, features)
-%VALIDATEANALYSISDATA  Check Kar and categorical features before modelling.
+%VALIDATEANALYSISDATA  Check Profit and categorical features before modelling.
 %
-%   Negative profit is allowed (loss-making orders). Inf/NaN in Kar are not.
-%   Rows with invalid Kar are dropped (listwise) and the reason is recorded.
+%   Negative profit is allowed (loss-making orders). Inf/NaN in Profit are not.
+%   Rows with invalid Profit are dropped (listwise) and the reason is recorded.
 %   Outliers are not removed here.
 
     notes = strings(0, 1);
@@ -27,10 +27,10 @@ function [data, notes] = validateAnalysisData(data, targetVar, features)
         y = data.(targetVar);
     end
 
-    badKar = ismissing(y) | ~isfinite(y);
-    nBad = sum(badKar);
+    badProfit = ismissing(y) | ~isfinite(y);
+    nBad = sum(badProfit);
     if nBad > 0
-        data = data(~badKar, :);
+        data = data(~badProfit, :);
         y = data.(targetVar);
         notes(end+1) = sprintf( ...
             'Removed %d rows with missing/non-finite %s (listwise).', nBad, targetVar); %#ok<AGROW>
@@ -77,5 +77,5 @@ function [data, notes] = validateAnalysisData(data, targetVar, features)
         fprintf('  - %s\n', notes(i));
     end
     fprintf('Usable features: %s\n', strjoin(present, ', '));
-    fprintf('N after Kar validation: %d\n', height(data));
+    fprintf('N after Profit validation: %d\n', height(data));
 end

@@ -1,5 +1,5 @@
 function R = analyzeCategoricalFeature(y, group, featureName, opts)
-%ANALYZECATEGORICALFEATURE  Full one-way analysis of Kar by one categorical factor.
+%ANALYZECATEGORICALFEATURE  Full one-way analysis of Profit by one categorical factor.
 %
 %   Pipeline (in order):
 %     descriptive -> outliers (detect only) -> normality -> variance
@@ -11,7 +11,7 @@ function R = analyzeCategoricalFeature(y, group, featureName, opts)
     y = double(y(:));
     group = removecats(categorical(string(group(:))));
     if ~isfield(opts, 'targetVar')
-        opts.targetVar = 'Kar';
+        opts.targetVar = 'Profit';
     end
     ok = isfinite(y) & ~isundefined(group);
     nDropped = sum(~ok);
@@ -296,8 +296,8 @@ function Nrm = normalityAnalysis(y, gidx, cats, alpha)
     end
 
     Nrm = struct();
-    Nrm.H0 = "Group Kar values come from a normal distribution.";
-    Nrm.H1 = "Group Kar values do not come from a normal distribution.";
+    Nrm.H0 = "Group Profit values come from a normal distribution.";
+    Nrm.H1 = "Group Profit values do not come from a normal distribution.";
     Nrm.rows = table(Group, N, TestPrimary, pPrimary, Decision, pAD, pLillie, failToRejectH0, Note);
     Nrm.alpha = alpha;
     Nrm.shapiroNote = [ ...
@@ -333,7 +333,7 @@ function V = varianceHomogeneity(y, gidx, k, alpha)
     end
 
     V = struct();
-    V.H0 = "All group variances of Kar are equal.";
+    V.H0 = "All group variances of Profit are equal.";
     V.H1 = "At least one group variance differs.";
     V.levene = struct('statistic', lev.F, 'p', lev.pClassical, ...
         'rejectH0', lev.pClassical < alpha, 'method', ...

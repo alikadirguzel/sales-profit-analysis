@@ -6,7 +6,7 @@ function s = computeAnovaDecomposition(y, gidx)
 %   Between-group SS captures how far group means sit from the grand mean.
 %   Within-group SS captures residual variation around each group mean.
 %
-%   H0 (classical ANOVA): all group means of Kar are equal.
+%   H0 (classical ANOVA): all group means of Profit are equal.
 %   H1: at least one group mean differs.
 %
 %   gidx must be integer group codes 1..k with no empty groups.

@@ -2,7 +2,7 @@ function [summaryTbl, rankTbl] = exportAnalysisResults(allR, opts, resultsDir)
 %EXPORTANALYSISRESULTS  Excel workbooks + global ranking of categorical features.
 %
 %   Ranking is NOT machine-learning feature importance. It orders categorical
-%   variables by statistical association with Kar (FDR-adjusted permutation p,
+%   variables by statistical association with Profit (FDR-adjusted permutation p,
 %   then eta^2, then agreement of classical ANOVA with permutation ANOVA).
 
     nF = numel(allR);
