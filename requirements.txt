@@ -1,0 +1,25 @@
+# Python 3.10+ (notebook was last run on 3.12).
+# Install from the repository root:
+#   python -m pip install -r requirements.txt
+# Fully local: no API keys, tokens, or cloud accounts.
+
+# --- data ---
+pandas>=2.2,<3
+numpy>=1.26,<3
+openpyxl>=3.1          # Excel read/write (.xlsx)
+
+# --- modelling ---
+scikit-learn>=1.5,<2
+xgboost>=2.0,<4
+optuna>=3.6,<5         # TPE hyperparameter search on train TimeSeriesSplit MAE
+
+# --- plots / explainability ---
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+shap>=0.44,<1          # TreeExplainer on the selected model
+
+# --- notebook ---
+jupyter>=1.0
+ipykernel>=6.29
+nbformat>=5.10
+nbconvert>=7.16        # optional headless re-run

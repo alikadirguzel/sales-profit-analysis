@@ -1,0 +1,1810 @@
+MATLAB 25.2.0.2998904 (R2025b)
+Random seed: rng(42)
+alpha = 0.05, nPermutations = 10000, confidenceLevel = 0.95
+Source file: Temizlenmis_SatisVerisi.xlsx
+VALIDATION: Negative Kar values: 21 (2.19%). These are kept (losses are valid).
+
+>>> Analysing feature 1/6: Sehir
+
+===========================================================
+FEATURE ANALYSIS: SEHIR
+===========================================================
+
+Groups:
+  Adana
+  Ankara
+  Antalya
+  Bursa
+  Gaziantep
+  Konya
+  Samsun
+  Trabzon
+  İstanbul
+  İzmir
+
+Sample sizes:
+  Adana                  = 64
+  Ankara                 = 162
+  Antalya                = 61
+  Bursa                  = 87
+  Gaziantep              = 46
+  Konya                  = 59
+  Samsun                 = 39
+  Trabzon                = 30
+  İstanbul               = 291
+  İzmir                  = 119
+
+-----------------------------------------------------------
+DESCRIPTIVE STATISTICS
+-----------------------------------------------------------
+
+Group                       N       Mean     Median        Std                 95% CI
+--------------------------------------------------------------------------------------
+Adana                      64    1823.77     812.86    2582.87  [  1178.59,   2468.95]
+Ankara                    162    1097.73     572.73    1393.89  [   881.46,   1314.00]
+Antalya                    61    1493.14    1054.44    1519.19  [  1104.06,   1882.22]
+Bursa                      87    1361.54     848.25    1519.44  [  1037.71,   1685.38]
+Gaziantep                  46    1138.89     765.61    1715.19  [   629.54,   1648.23]
+Konya                      59    1562.42     853.76    1892.63  [  1069.20,   2055.65]
+Samsun                     39    1667.96     867.81    2191.23  [   957.64,   2378.27]
+Trabzon                    30    1780.67    1031.76    2184.50  [   964.96,   2596.38]
+İstanbul                  291    1385.11     702.22    2031.84  [  1150.68,   1619.54]
+İzmir                     119    1497.25     815.38    2520.86  [  1039.64,   1954.87]
+
+Mean +/- std and other moments:
+  Adana: mean+/-std = 1823.77 +/- 2582.87 | var = 6671196.03 | min = 31.96 | max = 13620.64 | Q1 = 360.24 | Q3 = 1724.30 | IQR = 1364.06 | SE = 322.86 | CV = 1.416 | skew = 2.630 | excess kurtosis = 7.861
+  Ankara: mean+/-std = 1097.73 +/- 1393.89 | var = 1942937.48 | min = -732.16 | max = 9133.93 | Q1 = 246.03 | Q3 = 1549.02 | IQR = 1302.99 | SE = 109.51 | CV = 1.270 | skew = 2.797 | excess kurtosis = 10.675
+  Antalya: mean+/-std = 1493.14 +/- 1519.19 | var = 2307943.13 | min = -279.55 | max = 6458.92 | Q1 = 343.39 | Q3 = 2208.26 | IQR = 1864.87 | SE = 194.51 | CV = 1.017 | skew = 1.302 | excess kurtosis = 1.235
+  Bursa: mean+/-std = 1361.54 +/- 1519.44 | var = 2308697.62 | min = 24.92 | max = 6520.58 | Q1 = 283.05 | Q3 = 1754.47 | IQR = 1471.42 | SE = 162.90 | CV = 1.116 | skew = 1.736 | excess kurtosis = 2.541
+  Gaziantep: mean+/-std = 1138.89 +/- 1715.19 | var = 2941869.37 | min = -3409.68 | max = 6635.15 | Q1 = 326.60 | Q3 = 1783.10 | IQR = 1456.50 | SE = 252.89 | CV = 1.506 | skew = 0.793 | excess kurtosis = 3.260
+  Konya: mean+/-std = 1562.42 +/- 1892.63 | var = 3582045.23 | min = -1627.07 | max = 8441.75 | Q1 = 319.62 | Q3 = 2305.86 | IQR = 1986.25 | SE = 246.40 | CV = 1.211 | skew = 1.622 | excess kurtosis = 2.823
+  Samsun: mean+/-std = 1667.96 +/- 2191.23 | var = 4801492.93 | min = 74.87 | max = 10522.15 | Q1 = 382.92 | Q3 = 1615.50 | IQR = 1232.57 | SE = 350.88 | CV = 1.314 | skew = 2.469 | excess kurtosis = 6.646
+  Trabzon: mean+/-std = 1780.67 +/- 2184.50 | var = 4772058.20 | min = -800.02 | max = 9088.12 | Q1 = 403.67 | Q3 = 2416.12 | IQR = 2012.45 | SE = 398.83 | CV = 1.227 | skew = 1.839 | excess kurtosis = 3.441
+  İstanbul: mean+/-std = 1385.11 +/- 2031.84 | var = 4128365.18 | min = -32.96 | max = 14240.79 | Q1 = 307.67 | Q3 = 1535.68 | IQR = 1228.01 | SE = 119.11 | CV = 1.467 | skew = 3.386 | excess kurtosis = 14.047
+  İzmir: mean+/-std = 1497.25 +/- 2520.86 | var = 6354733.38 | min = -6485.91 | max = 18397.92 | Q1 = 292.67 | Q3 = 2048.50 | IQR = 1755.83 | SE = 231.09 | CV = 1.684 | skew = 3.313 | excess kurtosis = 19.311
+
+-----------------------------------------------------------
+NORMALITY
+-----------------------------------------------------------
+
+H0: Group data come from a normal distribution.
+H1: Group data do not come from a normal distribution.
+Shapiro-Wilk is not shipped with MATLAB Statistics Toolbox in this environment; 
+
+Anderson-Darling and Lilliefors were used instead.
+
+Group: Adana
+  N = 64
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Ankara
+  N = 162
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Antalya
+  N = 61
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Bursa
+  N = 87
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Gaziantep
+  N = 46
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Konya
+  N = 59
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Samsun
+  N = 39
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Trabzon
+  N = 30
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: İstanbul
+  N = 291
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+Group: İzmir
+  N = 119
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+
+-----------------------------------------------------------
+OUTLIERS (detected, not removed)
+-----------------------------------------------------------
+
+IQR (Tukey 1.5) primary; |z|>3 supplementary. Detected only, not removed.
+
+Group                       N   IQR outliers      IQR percent        z>3  z>3 percent
+Adana                      64             10           15.62%          2        3.12%
+Ankara                    162              9            5.56%          3        1.85%
+Antalya                    61              2            3.28%          1        1.64%
+Bursa                      87              9           10.34%          2        2.30%
+Gaziantep                  46              5           10.87%          1        2.17%
+Konya                      59              4            6.78%          1        1.69%
+Samsun                     39              5           12.82%          1        2.56%
+Trabzon                    30              2            6.67%          1        3.33%
+İstanbul                  291             24            8.25%          8        2.75%
+İzmir                     119              8            6.72%          4        3.36%
+
+-----------------------------------------------------------
+VARIANCE HOMOGENEITY
+-----------------------------------------------------------
+
+H0: All group variances are equal.
+H1: At least one group variance differs.
+
+Levene's Test (Levene (ANOVA on |y - group mean|))
+  Statistic = 2.1452
+  p-value   = 0.0237
+  Decision  = Reject H0
+
+Brown-Forsythe (median version): statistic = 1.0888, p = 0.3682, Fail to Reject H0
+Bartlett p-value (sensitive to non-normality) = 2.206e-13
+Levene is the primary homogeneity test.
+
+-----------------------------------------------------------
+CLASSICAL ANOVA
+-----------------------------------------------------------
+
+Feature = Sehir
+
+H0: all group means of Kar are equal.
+H1: at least one group mean differs.
+
+Source                   SS       df             MS          F      p-value
+----------------------------------------------------------------------------
+Between       39928717.2120        9   4436524.1347     1.1434       0.3288
+Within       3678196473.1516      948   3879954.0856
+Total        3718125190.3636      957
+
+F = 1.1434
+df1 = 9, df2 = 948
+p-value = 0.3288
+anova1 cross-check p = 0.3288
+Decision = Fail to Reject H0
+
+Eta squared  eta^2   = 0.0107
+Omega squared omega^2 = 0.0013
+Interpretation: Sehir explains approximately 1.07% of the variance in profit.
+Effect-size cutoffs (e.g. 0.01/0.06/0.14) are context-dependent; the numeric eta^2/omega^2 values are the quantities to report.
+
+-----------------------------------------------------------
+PERMUTATION ANOVA
+-----------------------------------------------------------
+
+H0: There is no systematic group effect on the profit distribution.
+    Similar F values can arise by chance after shuffling group labels.
+H1: There is a systematic difference among groups.
+
+Permutations     = 10000
+Observed F       = 1.1434
+Mean permuted F  = 1.0005
+95th percentile  = 1.8909
+n(F* >= F_obs)   = 3232
+Permutation p    = (nExtreme + 1) / (nPerm + 1) = 0.3233
+alpha            = 0.05
+Decision: H0 cannot be rejected.
+There is insufficient statistical evidence that the groups differ.
+
+-----------------------------------------------------------
+KRUSKAL-WALLIS (robustness check)
+-----------------------------------------------------------
+
+H0: The groups have the same distribution of Kar (equal stochastic dominance / ranks).
+H1: At least one group differs in distribution.
+This is NOT used as an automatic replacement for ANOVA.
+
+H = 9.1983
+df = 9
+p-value = 0.4192
+epsilon^2 = 0.0002
+
+-----------------------------------------------------------
+POST-HOC
+-----------------------------------------------------------
+
+Overall classical ANOVA and permutation ANOVA are both non-significant at alpha = 0.05. Pairwise comparisons were not run (avoids extra false positives).
+
+-----------------------------------------------------------
+MEAN COMPARISON SNAPSHOT
+-----------------------------------------------------------
+
+Feature: Sehir
+
+  Adana                  Mean Profit = 1823.77
+  Ankara                 Mean Profit = 1097.73
+  Antalya                Mean Profit = 1493.14
+  Bursa                  Mean Profit = 1361.54
+  Gaziantep              Mean Profit = 1138.89
+  Konya                  Mean Profit = 1562.42
+  Samsun                 Mean Profit = 1667.96
+  Trabzon                Mean Profit = 1780.67
+  İstanbul               Mean Profit = 1385.11
+  İzmir                  Mean Profit = 1497.25
+
+ANOVA p-value            = 0.3288
+Permutation ANOVA p-value = 0.3233
+Kruskal-Wallis p-value    = 0.4192
+eta^2                     = 0.0107
+
+-----------------------------------------------------------
+FINAL INTERPRETATION
+-----------------------------------------------------------
+
+Neither classical ANOVA nor permutation ANOVA provides sufficient evidence to reject the null hypothesis at alpha = 0.05 (ANOVA p = 0.3288, permutation p = 0.3233).
+Although the observed group means are numerically different, the available evidence does not establish that the differences are statistically significant.
+The largest observed sample-mean gap is Adana vs Ankara (difference = 726.04). A larger sample mean is not by itself a conclusion that one group "earns more"; that claim requires a significant overall test and, when applicable, a significant pairwise interval.
+Sehir explains approximately 1.07% of the variance in profit (eta^2 = 0.0107, omega^2 = 0.0013). Statistical significance is not the same as practical importance: with large n, small mean gaps can produce small p-values. Thresholds such as 0.01 / 0.06 / 0.14 are sometimes cited as small / medium / large but are context-dependent and are not applied here as automatic labels.
+Kruskal-Wallis robustness check: H = 9.1983, p = 0.4192. This rank test is reported alongside ANOVA; it is not used to overwrite the permutation result.
+Levene test rejected equal variances (p = 0.0237). Classical ANOVA p-values should be read with caution; permutation ANOVA remains the primary confirmatory test.
+IQR outliers detected: 78 observations across groups. They were flagged only and were not removed from the analysis.
+
+===========================================================
+
+Saving figures to results/Sehir
+
+>>> Analysing feature 2/6: Bolge
+
+===========================================================
+FEATURE ANALYSIS: BOLGE
+===========================================================
+
+Groups:
+  Akdeniz
+  Ege
+  Güneydoğu Anadolu
+  Karadeniz
+  Marmara
+  İç Anadolu
+
+Sample sizes:
+  Akdeniz                = 125
+  Ege                    = 119
+  Güneydoğu Anadolu      = 46
+  Karadeniz              = 69
+  Marmara                = 378
+  İç Anadolu             = 221
+
+-----------------------------------------------------------
+DESCRIPTIVE STATISTICS
+-----------------------------------------------------------
+
+Group                       N       Mean     Median        Std                 95% CI
+--------------------------------------------------------------------------------------
+Akdeniz                   125    1662.42     848.62    2129.24  [  1285.48,   2039.37]
+Ege                       119    1497.25     815.38    2520.86  [  1039.64,   1954.87]
+Güneydoğu Anadolu          46    1138.89     765.61    1715.19  [   629.54,   1648.23]
+Karadeniz                  69    1716.96     932.53    2172.90  [  1194.97,   2238.95]
+Marmara                   378    1379.69     724.37    1924.17  [  1185.09,   1574.29]
+İç Anadolu                221    1221.79     685.41    1551.99  [  1016.04,   1427.54]
+
+Mean +/- std and other moments:
+  Akdeniz: mean+/-std = 1662.42 +/- 2129.24 | var = 4533678.45 | min = -279.55 | max = 13620.64 | Q1 = 354.52 | Q3 = 2029.92 | IQR = 1675.40 | SE = 190.45 | CV = 1.281 | skew = 2.686 | excess kurtosis = 9.704
+  Ege: mean+/-std = 1497.25 +/- 2520.86 | var = 6354733.38 | min = -6485.91 | max = 18397.92 | Q1 = 292.67 | Q3 = 2048.50 | IQR = 1755.83 | SE = 231.09 | CV = 1.684 | skew = 3.313 | excess kurtosis = 19.311
+  Güneydoğu Anadolu: mean+/-std = 1138.89 +/- 1715.19 | var = 2941869.37 | min = -3409.68 | max = 6635.15 | Q1 = 326.60 | Q3 = 1783.10 | IQR = 1456.50 | SE = 252.89 | CV = 1.506 | skew = 0.793 | excess kurtosis = 3.260
+  Karadeniz: mean+/-std = 1716.96 +/- 2172.90 | var = 4721497.72 | min = -800.02 | max = 10522.15 | Q1 = 392.91 | Q3 = 1660.65 | IQR = 1267.73 | SE = 261.59 | CV = 1.266 | skew = 2.148 | excess kurtosis = 4.787
+  Marmara: mean+/-std = 1379.69 +/- 1924.17 | var = 3702416.71 | min = -32.96 | max = 14240.79 | Q1 = 297.43 | Q3 = 1618.53 | IQR = 1321.10 | SE = 98.97 | CV = 1.395 | skew = 3.257 | excess kurtosis = 13.735
+  İç Anadolu: mean+/-std = 1221.79 +/- 1551.99 | var = 2408684.55 | min = -1627.07 | max = 9133.93 | Q1 = 266.21 | Q3 = 1631.15 | IQR = 1364.94 | SE = 104.40 | CV = 1.270 | skew = 2.354 | excess kurtosis = 7.001
+
+-----------------------------------------------------------
+NORMALITY
+-----------------------------------------------------------
+
+H0: Group data come from a normal distribution.
+H1: Group data do not come from a normal distribution.
+Shapiro-Wilk is not shipped with MATLAB Statistics Toolbox in this environment; 
+
+Anderson-Darling and Lilliefors were used instead.
+
+Group: Akdeniz
+  N = 125
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Ege
+  N = 119
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Güneydoğu Anadolu
+  N = 46
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Karadeniz
+  N = 69
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Marmara
+  N = 378
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+Group: İç Anadolu
+  N = 221
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+
+-----------------------------------------------------------
+OUTLIERS (detected, not removed)
+-----------------------------------------------------------
+
+IQR (Tukey 1.5) primary; |z|>3 supplementary. Detected only, not removed.
+
+Group                       N   IQR outliers      IQR percent        z>3  z>3 percent
+Akdeniz                   125             12            9.60%          2        1.60%
+Ege                       119              8            6.72%          4        3.36%
+Güneydoğu Anadolu          46              5           10.87%          1        2.17%
+Karadeniz                  69             10           14.49%          2        2.90%
+Marmara                   378             32            8.47%          9        2.38%
+İç Anadolu                221             17            7.69%          6        2.71%
+
+-----------------------------------------------------------
+VARIANCE HOMOGENEITY
+-----------------------------------------------------------
+
+H0: All group variances are equal.
+H1: At least one group variance differs.
+
+Levene's Test (Levene (ANOVA on |y - group mean|))
+  Statistic = 2.0351
+  p-value   = 0.0714
+  Decision  = Fail to Reject H0
+
+Brown-Forsythe (median version): statistic = 1.1976, p = 0.3083, Fail to Reject H0
+Bartlett p-value (sensitive to non-normality) = 3.211e-08
+Levene is the primary homogeneity test.
+
+-----------------------------------------------------------
+CLASSICAL ANOVA
+-----------------------------------------------------------
+
+Feature = Bolge
+
+H0: all group means of Kar are equal.
+H1: at least one group mean differs.
+
+Source                   SS       df             MS          F      p-value
+----------------------------------------------------------------------------
+Between       26922857.4492        5   5384571.4898     1.3887       0.2259
+Within       3691202332.9144      952   3877313.3749
+Total        3718125190.3636      957
+
+F = 1.3887
+df1 = 5, df2 = 952
+p-value = 0.2259
+anova1 cross-check p = 0.2259
+Decision = Fail to Reject H0
+
+Eta squared  eta^2   = 0.0072
+Omega squared omega^2 = 0.0020
+Interpretation: Bolge explains approximately 0.72% of the variance in profit.
+Effect-size cutoffs (e.g. 0.01/0.06/0.14) are context-dependent; the numeric eta^2/omega^2 values are the quantities to report.
+
+-----------------------------------------------------------
+PERMUTATION ANOVA
+-----------------------------------------------------------
+
+H0: There is no systematic group effect on the profit distribution.
+    Similar F values can arise by chance after shuffling group labels.
+H1: There is a systematic difference among groups.
+
+Permutations     = 10000
+Observed F       = 1.3887
+Mean permuted F  = 0.9983
+95th percentile  = 2.2210
+n(F* >= F_obs)   = 2203
+Permutation p    = (nExtreme + 1) / (nPerm + 1) = 0.2204
+alpha            = 0.05
+Decision: H0 cannot be rejected.
+There is insufficient statistical evidence that the groups differ.
+
+-----------------------------------------------------------
+KRUSKAL-WALLIS (robustness check)
+-----------------------------------------------------------
+
+H0: The groups have the same distribution of Kar (equal stochastic dominance / ranks).
+H1: At least one group differs in distribution.
+This is NOT used as an automatic replacement for ANOVA.
+
+H = 5.5544
+df = 5
+p-value = 0.3520
+epsilon^2 = 0.0006
+
+-----------------------------------------------------------
+POST-HOC
+-----------------------------------------------------------
+
+Overall classical ANOVA and permutation ANOVA are both non-significant at alpha = 0.05. Pairwise comparisons were not run (avoids extra false positives).
+
+-----------------------------------------------------------
+MEAN COMPARISON SNAPSHOT
+-----------------------------------------------------------
+
+Feature: Bolge
+
+  Akdeniz                Mean Profit = 1662.42
+  Ege                    Mean Profit = 1497.25
+  Güneydoğu Anadolu      Mean Profit = 1138.89
+  Karadeniz              Mean Profit = 1716.96
+  Marmara                Mean Profit = 1379.69
+  İç Anadolu             Mean Profit = 1221.79
+
+ANOVA p-value            = 0.2259
+Permutation ANOVA p-value = 0.2204
+Kruskal-Wallis p-value    = 0.3520
+eta^2                     = 0.0072
+
+-----------------------------------------------------------
+FINAL INTERPRETATION
+-----------------------------------------------------------
+
+Neither classical ANOVA nor permutation ANOVA provides sufficient evidence to reject the null hypothesis at alpha = 0.05 (ANOVA p = 0.2259, permutation p = 0.2204).
+Although the observed group means are numerically different, the available evidence does not establish that the differences are statistically significant.
+The largest observed sample-mean gap is Karadeniz vs Güneydoğu Anadolu (difference = 578.08). A larger sample mean is not by itself a conclusion that one group "earns more"; that claim requires a significant overall test and, when applicable, a significant pairwise interval.
+Bolge explains approximately 0.72% of the variance in profit (eta^2 = 0.0072, omega^2 = 0.0020). Statistical significance is not the same as practical importance: with large n, small mean gaps can produce small p-values. Thresholds such as 0.01 / 0.06 / 0.14 are sometimes cited as small / medium / large but are context-dependent and are not applied here as automatic labels.
+Kruskal-Wallis robustness check: H = 5.5544, p = 0.3520. This rank test is reported alongside ANOVA; it is not used to overwrite the permutation result.
+Levene test did not reject equal variances (p = 0.0714).
+IQR outliers detected: 84 observations across groups. They were flagged only and were not removed from the analysis.
+
+===========================================================
+
+Saving figures to results/Bolge
+
+>>> Analysing feature 3/6: Urun
+
+===========================================================
+FEATURE ANALYSIS: URUN
+===========================================================
+
+Groups:
+  Backpack
+  Desk Lamp
+  Laptop Stand
+  Mechanical Keyboard
+  Monitor 24
+  Monitor 27
+  Notebook Set
+  Office Chair
+  Pen Set
+  USB-C Hub
+  Webcam
+  Wireless Mouse
+
+Sample sizes:
+  Backpack               = 92
+  Desk Lamp              = 87
+  Laptop Stand           = 73
+  Mechanical Keyboard    = 77
+  Monitor 24             = 78
+  Monitor 27             = 71
+  Notebook Set           = 69
+  Office Chair           = 85
+  Pen Set                = 95
+  USB-C Hub              = 82
+  Webcam                 = 71
+  Wireless Mouse         = 78
+
+-----------------------------------------------------------
+DESCRIPTIVE STATISTICS
+-----------------------------------------------------------
+
+Group                       N       Mean     Median        Std                 95% CI
+--------------------------------------------------------------------------------------
+Backpack                   92    1522.25    1237.65    1182.03  [  1277.46,   1767.04]
+Desk Lamp                  87    1121.13     844.45     901.28  [   929.04,   1313.22]
+Laptop Stand               73     700.13     475.12     674.90  [   542.66,    857.60]
+Mechanical Keyboard        77    1528.32    1276.94    1519.58  [  1183.42,   1873.22]
+Monitor 24                 78    2047.98    1710.58    2178.58  [  1556.79,   2539.18]
+Monitor 27                 71    2506.92    1414.98    3012.65  [  1793.84,   3220.00]
+Notebook Set               69     362.09     230.37     330.66  [   282.66,    441.52]
+Office Chair               85    3955.54    3029.26    3633.21  [  3171.88,   4739.21]
+Pen Set                    95     164.37     114.20     137.30  [   136.41,    192.34]
+USB-C Hub                  82     960.16     723.90     777.97  [   789.22,   1131.10]
+Webcam                     71    1441.93    1110.08    1321.47  [  1129.15,   1754.72]
+Wireless Mouse             78     594.00     447.02     466.50  [   488.82,    699.18]
+
+Mean +/- std and other moments:
+  Backpack: mean+/-std = 1522.25 +/- 1182.03 | var = 1397186.29 | min = 165.41 | max = 6661.99 | Q1 = 667.37 | Q3 = 2082.72 | IQR = 1415.35 | SE = 123.23 | CV = 0.776 | skew = 1.621 | excess kurtosis = 3.548
+  Desk Lamp: mean+/-std = 1121.13 +/- 901.28 | var = 812297.71 | min = 114.04 | max = 4598.18 | Q1 = 406.07 | Q3 = 1482.29 | IQR = 1076.22 | SE = 96.63 | CV = 0.804 | skew = 1.379 | excess kurtosis = 1.954
+  Laptop Stand: mean+/-std = 700.13 +/- 674.90 | var = 455492.26 | min = 80.20 | max = 3290.01 | Q1 = 206.95 | Q3 = 916.49 | IQR = 709.54 | SE = 78.99 | CV = 0.964 | skew = 1.831 | excess kurtosis = 3.528
+  Mechanical Keyboard: mean+/-std = 1528.32 +/- 1519.58 | var = 2309109.37 | min = 195.50 | max = 10522.15 | Q1 = 525.37 | Q3 = 2039.60 | IQR = 1514.23 | SE = 173.17 | CV = 0.994 | skew = 3.371 | excess kurtosis = 16.526
+  Monitor 24: mean+/-std = 2047.98 +/- 2178.58 | var = 4746200.94 | min = -3409.68 | max = 10584.93 | Q1 = 590.16 | Q3 = 3088.25 | IQR = 2498.09 | SE = 246.68 | CV = 1.064 | skew = 1.108 | excess kurtosis = 2.754
+  Monitor 27: mean+/-std = 2506.92 +/- 3012.65 | var = 9076049.88 | min = -6485.91 | max = 9533.94 | Q1 = 578.33 | Q3 = 4871.08 | IQR = 4292.75 | SE = 357.54 | CV = 1.202 | skew = 0.425 | excess kurtosis = 0.556
+  Notebook Set: mean+/-std = 362.09 +/- 330.66 | var = 109333.72 | min = 60.43 | max = 1378.86 | Q1 = 91.14 | Q3 = 510.23 | IQR = 419.09 | SE = 39.81 | CV = 0.913 | skew = 1.294 | excess kurtosis = 0.941
+  Office Chair: mean+/-std = 3955.54 +/- 3633.21 | var = 13200209.07 | min = -1094.49 | max = 18397.92 | Q1 = 1255.01 | Q3 = 5424.07 | IQR = 4169.06 | SE = 394.08 | CV = 0.919 | skew = 1.626 | excess kurtosis = 3.127
+  Pen Set: mean+/-std = 164.37 +/- 137.30 | var = 18850.49 | min = 24.92 | max = 686.57 | Q1 = 50.84 | Q3 = 234.14 | IQR = 183.30 | SE = 14.09 | CV = 0.835 | skew = 1.307 | excess kurtosis = 1.483
+  USB-C Hub: mean+/-std = 960.16 +/- 777.97 | var = 605239.42 | min = 180.24 | max = 4316.06 | Q1 = 378.09 | Q3 = 1275.76 | IQR = 897.67 | SE = 85.91 | CV = 0.810 | skew = 1.709 | excess kurtosis = 3.675
+  Webcam: mean+/-std = 1441.93 +/- 1321.47 | var = 1746273.20 | min = 218.32 | max = 6334.19 | Q1 = 480.93 | Q3 = 1889.87 | IQR = 1408.94 | SE = 156.83 | CV = 0.916 | skew = 1.960 | excess kurtosis = 4.315
+  Wireless Mouse: mean+/-std = 594.00 +/- 466.50 | var = 217623.72 | min = 131.38 | max = 2522.37 | Q1 = 218.42 | Q3 = 838.21 | IQR = 619.79 | SE = 52.82 | CV = 0.785 | skew = 1.613 | excess kurtosis = 3.374
+
+-----------------------------------------------------------
+NORMALITY
+-----------------------------------------------------------
+
+H0: Group data come from a normal distribution.
+H1: Group data do not come from a normal distribution.
+Shapiro-Wilk is not shipped with MATLAB Statistics Toolbox in this environment; 
+
+Anderson-Darling and Lilliefors were used instead.
+
+Group: Backpack
+  N = 92
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Desk Lamp
+  N = 87
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Laptop Stand
+  N = 73
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Mechanical Keyboard
+  N = 77
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Monitor 24
+  N = 78
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0031
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Monitor 27
+  N = 71
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Notebook Set
+  N = 69
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Office Chair
+  N = 85
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0036
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Pen Set
+  N = 95
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: USB-C Hub
+  N = 82
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Webcam
+  N = 71
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Wireless Mouse
+  N = 78
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+
+-----------------------------------------------------------
+OUTLIERS (detected, not removed)
+-----------------------------------------------------------
+
+IQR (Tukey 1.5) primary; |z|>3 supplementary. Detected only, not removed.
+
+Group                       N   IQR outliers      IQR percent        z>3  z>3 percent
+Backpack                   92              4            4.35%          1        1.09%
+Desk Lamp                  87              3            3.45%          1        1.15%
+Laptop Stand               73              5            6.85%          1        1.37%
+Mechanical Keyboard        77              3            3.90%          2        2.60%
+Monitor 24                 78              3            3.85%          1        1.28%
+Monitor 27                 71              1            1.41%          0        0.00%
+Notebook Set               69              2            2.90%          1        1.45%
+Office Chair               85              4            4.71%          1        1.18%
+Pen Set                    95              1            1.05%          1        1.05%
+USB-C Hub                  82              3            3.66%          1        1.22%
+Webcam                     71              5            7.04%          2        2.82%
+Wireless Mouse             78              2            2.56%          2        2.56%
+
+-----------------------------------------------------------
+VARIANCE HOMOGENEITY
+-----------------------------------------------------------
+
+H0: All group variances are equal.
+H1: At least one group variance differs.
+
+Levene's Test (Levene (ANOVA on |y - group mean|))
+  Statistic = 44.0790
+  p-value   = 1.661e-77
+  Decision  = Reject H0
+
+Brown-Forsythe (median version): statistic = 32.4211, p = 1.243e-58, Reject H0
+Bartlett p-value (sensitive to non-normality) = 5.047e-234
+Levene is the primary homogeneity test.
+
+-----------------------------------------------------------
+CLASSICAL ANOVA
+-----------------------------------------------------------
+
+Feature = Urun
+
+H0: all group means of Kar are equal.
+H1: at least one group mean differs.
+
+Source                   SS       df             MS          F      p-value
+----------------------------------------------------------------------------
+Between      1006010172.1898       11  91455470.1991    31.9001    9.490e-58
+Within       2712115018.1738      946   2866929.1947
+Total        3718125190.3636      957
+
+F = 31.9001
+df1 = 11, df2 = 946
+p-value = 9.490e-58
+anova1 cross-check p = 9.490e-58
+Decision = Reject H0
+
+Eta squared  eta^2   = 0.2706
+Omega squared omega^2 = 0.2619
+Interpretation: Urun explains approximately 27.06% of the variance in profit.
+Effect-size cutoffs (e.g. 0.01/0.06/0.14) are context-dependent; the numeric eta^2/omega^2 values are the quantities to report.
+
+-----------------------------------------------------------
+PERMUTATION ANOVA
+-----------------------------------------------------------
+
+H0: There is no systematic group effect on the profit distribution.
+    Similar F values can arise by chance after shuffling group labels.
+H1: There is a systematic difference among groups.
+
+Permutations     = 10000
+Observed F       = 31.9001
+Mean permuted F  = 1.0061
+95th percentile  = 1.7908
+n(F* >= F_obs)   = 0
+Permutation p    = (nExtreme + 1) / (nPerm + 1) = 9.999e-05
+alpha            = 0.05
+Decision: H0 rejected.
+There is statistically significant evidence that at least one group differs.
+
+-----------------------------------------------------------
+KRUSKAL-WALLIS (robustness check)
+-----------------------------------------------------------
+
+H0: The groups have the same distribution of Kar (equal stochastic dominance / ranks).
+H1: At least one group differs in distribution.
+This is NOT used as an automatic replacement for ANOVA.
+
+H = 366.2244
+df = 11
+p-value = 8.902e-72
+epsilon^2 = 0.3755
+
+-----------------------------------------------------------
+POST-HOC
+-----------------------------------------------------------
+
+Overall test was significant (ANOVA p = 9.490e-58, permutation p = 9.999e-05). Tukey-Kramer pairwise comparisons of means are reported. Levene and/or normality diagnostics suggest caution; Dunn-Sidak pairwise comparisons of ranks are also reported as a complement.
+
+Tukey-Kramer (means)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Desk Lamp vs Office Chair                    -2834.42     [-3678.31, -1990.53]    0.000e+00    YES
+Laptop Stand vs Office Chair                 -3255.41     [-4138.39, -2372.44]    0.000e+00    YES
+Notebook Set vs Office Chair                 -3593.45     [-4490.09, -2696.82]    0.000e+00    YES
+Office Chair vs Pen Set                       3791.17       [2965.03, 4617.31]    0.000e+00    YES
+Office Chair vs USB-C Hub                     2995.39       [2138.88, 3851.90]    0.000e+00    YES
+Office Chair vs Wireless Mouse                3361.55       [2493.93, 4229.16]    0.000e+00    YES
+Backpack vs Office Chair                     -2433.29     [-3265.77, -1600.81]    1.961e-21    YES
+Office Chair vs Webcam                        2513.61       [1623.97, 3403.25]    9.619e-20    YES
+Mechanical Keyboard vs Office Chair          -2427.23     [-3297.78, -1556.68]    3.664e-19    YES
+Monitor 27 vs Pen Set                         2342.55       [1474.48, 3210.61]    9.148e-18    YES
+Monitor 27 vs Notebook Set                    2144.83       [1209.42, 3080.24]    2.456e-12    YES
+Monitor 24 vs Pen Set                         1883.61       [1038.13, 2729.09]    1.392e-11    YES
+Monitor 24 vs Office Chair                   -1907.56     [-2775.18, -1039.94]    2.967e-11    YES
+Monitor 27 vs Wireless Mouse                  1912.92       [1005.30, 2820.55]    2.870e-10    YES
+Laptop Stand vs Monitor 27                   -1806.79      [-2729.11, -884.47]    8.956e-09    YES
+Monitor 24 vs Notebook Set                    1685.89        [771.40, 2600.38]    1.050e-07    YES
+Monitor 27 vs USB-C Hub                       1546.76        [649.75, 2443.78]    1.117e-06    YES
+Backpack vs Pen Set                           1357.88        [548.49, 2167.27]    2.691e-06    YES
+Monitor 24 vs Wireless Mouse                  1453.99        [567.94, 2340.04]    5.274e-06    YES
+Monitor 27 vs Office Chair                   -1448.62      [-2338.27, -558.98]    6.627e-06    YES
+Mechanical Keyboard vs Pen Set                1363.94        [515.45, 2212.44]    9.613e-06    YES
+Desk Lamp vs Monitor 27                      -1385.79      [-2270.77, -500.82]    1.990e-05    YES
+Laptop Stand vs Monitor 24                   -1347.85      [-2248.95, -446.76]    6.485e-05    YES
+Pen Set vs Webcam                            -1277.56      [-2145.63, -409.49]    9.601e-05    YES
+Backpack vs Notebook Set                      1160.16        [278.94, 2041.39]       0.0010    YES
+Mechanical Keyboard vs Notebook Set           1166.23        [248.96, 2083.50]       0.0019    YES
+Monitor 24 vs USB-C Hub                       1087.83        [212.65, 1963.00]       0.0028    YES
+Desk Lamp vs Pen Set                           956.75        [135.64, 1777.87]       0.0078    YES
+Notebook Set vs Webcam                       -1079.84      [-2015.25, -144.43]       0.0089    YES
+Monitor 27 vs Webcam                          1064.99        [136.28, 1993.69]       0.0097    YES
+Backpack vs Monitor 27                        -984.67      [-1858.77, -110.57]       0.0124    YES
+Backpack vs Wireless Mouse                     928.26         [76.58, 1779.93]       0.0190    YES
+Mechanical Keyboard vs Monitor 27             -978.60       [-1889.03, -68.17]       0.0226    YES
+Desk Lamp vs Monitor 24                       -926.85       [-1789.69, -64.02]       0.0227    YES
+Mechanical Keyboard vs Wireless Mouse          934.32         [45.40, 1823.25]       0.0293    YES
+Pen Set vs USB-C Hub                          -795.78        [-1629.87, 38.30]       0.0781     no
+Backpack vs Laptop Stand                       822.12        [-45.19, 1689.44]       0.0828     no
+Webcam vs Wireless Mouse                       847.94        [-59.69, 1755.56]       0.0938     no
+Laptop Stand vs Mechanical Keyboard           -828.19        [-1732.11, 75.73]       0.1101     no
+Desk Lamp vs Notebook Set                      759.04       [-132.97, 1651.05]       0.1880     no
+Laptop Stand vs Webcam                        -741.80       [-1664.12, 180.52]       0.2635     no
+Backpack vs USB-C Hub                          562.10       [-278.26, 1402.45]       0.5600     no
+Monitor 24 vs Webcam                           606.05       [-301.58, 1513.68]       0.5627     no
+Notebook Set vs USB-C Hub                     -598.07       [-1502.03, 305.89]       0.5774     no
+Mechanical Keyboard vs USB-C Hub               568.16       [-309.93, 1446.25]       0.6123     no
+Laptop Stand vs Pen Set                        535.75       [-325.48, 1396.99]       0.6707     no
+Backpack vs Monitor 24                        -525.73       [-1377.41, 325.95]       0.6817     no
+Desk Lamp vs Wireless Mouse                    527.13       [-335.70, 1389.96]       0.6960     no
+Mechanical Keyboard vs Monitor 24             -519.66       [-1408.59, 369.26]       0.7530     no
+USB-C Hub vs Webcam                           -481.77       [-1378.79, 415.24]       0.8421     no
+Pen Set vs Wireless Mouse                     -429.62       [-1275.11, 415.86]       0.8860     no
+Monitor 24 vs Monitor 27                      -458.94       [-1366.56, 448.69]       0.8893     no
+Backpack vs Desk Lamp                          401.13       [-426.37, 1228.62]       0.9152     no
+Desk Lamp vs Laptop Stand                      421.00       [-457.28, 1299.27]       0.9211     no
+Desk Lamp vs Mechanical Keyboard              -407.19       [-1272.97, 458.59]       0.9305     no
+USB-C Hub vs Wireless Mouse                    366.16       [-509.02, 1241.34]       0.9696     no
+Laptop Stand vs Notebook Set                   338.04       [-591.03, 1267.11]       0.9899     no
+Desk Lamp vs Webcam                           -320.80       [-1205.78, 564.17]       0.9902     no
+Laptop Stand vs USB-C Hub                     -260.03       [-1150.44, 630.38]       0.9985     no
+Notebook Set vs Wireless Mouse                -231.91       [-1146.39, 682.58]       0.9996     no
+Notebook Set vs Pen Set                        197.72       [-677.52, 1072.96]       0.9999     no
+Desk Lamp vs USB-C Hub                         160.97       [-690.69, 1012.63]       1.0000     no
+Laptop Stand vs Wireless Mouse                 106.13       [-794.96, 1007.23]       1.0000     no
+Mechanical Keyboard vs Webcam                   86.39        [-824.05, 996.82]       1.0000     no
+Backpack vs Webcam                              80.32        [-793.78, 954.42]       1.0000     no
+Backpack vs Mechanical Keyboard                 -6.06        [-860.73, 848.60]       1.0000     no
+
+Dunn-Sidak (ranks)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Backpack vs Pen Set                            461.02         [325.00, 597.05]    0.000e+00    YES
+Desk Lamp vs Pen Set                           377.77         [239.77, 515.76]    0.000e+00    YES
+Laptop Stand vs Office Chair                  -371.97       [-520.37, -223.58]    0.000e+00    YES
+Mechanical Keyboard vs Pen Set                 443.84         [301.24, 586.44]    0.000e+00    YES
+Monitor 24 vs Pen Set                          474.64         [332.55, 616.73]    0.000e+00    YES
+Monitor 27 vs Pen Set                          471.42         [325.53, 617.31]    0.000e+00    YES
+Notebook Set vs Office Chair                  -501.91       [-652.60, -351.22]    0.000e+00    YES
+Office Chair vs Pen Set                        616.31         [477.46, 755.15]    0.000e+00    YES
+Office Chair vs Wireless Mouse                 388.81         [243.00, 534.62]    0.000e+00    YES
+Pen Set vs Webcam                             -426.52       [-572.41, -280.63]    0.000e+00    YES
+Pen Set vs USB-C Hub                          -342.26       [-482.43, -202.08]    1.465e-14    YES
+Monitor 24 vs Notebook Set                     360.25         [206.56, 513.94]    2.198e-13    YES
+Backpack vs Notebook Set                       346.63         [198.53, 494.73]    2.418e-13    YES
+Monitor 27 vs Notebook Set                     357.03         [199.82, 514.23]    1.517e-12    YES
+Mechanical Keyboard vs Notebook Set            329.45         [175.29, 483.60]    4.517e-11    YES
+Notebook Set vs Webcam                        -312.12       [-469.33, -154.92]    1.655e-09    YES
+Office Chair vs USB-C Hub                      274.05         [130.10, 417.99]    1.035e-08    YES
+Desk Lamp vs Notebook Set                      263.37         [113.46, 413.28]    2.333e-07    YES
+Laptop Stand vs Pen Set                        244.33          [99.59, 389.07]    9.236e-07    YES
+Desk Lamp vs Office Chair                     -238.54        [-380.37, -96.72]    1.042e-06    YES
+Monitor 24 vs Wireless Mouse                   247.14          [98.23, 396.05]    1.606e-06    YES
+Backpack vs Wireless Mouse                     233.53          [90.39, 376.66]    2.754e-06    YES
+Pen Set vs Wireless Mouse                     -227.50        [-369.59, -85.40]    4.889e-06    YES
+Monitor 27 vs Wireless Mouse                   243.92          [91.38, 396.46]    5.071e-06    YES
+Laptop Stand vs Monitor 24                    -230.31        [-381.74, -78.87]    2.113e-05    YES
+Notebook Set vs USB-C Hub                     -227.86        [-379.78, -75.94]    3.056e-05    YES
+Backpack vs Laptop Stand                       216.69          [70.93, 362.45]    3.856e-05    YES
+Laptop Stand vs Monitor 27                    -227.09        [-382.09, -72.08]    5.603e-05    YES
+Mechanical Keyboard vs Wireless Mouse          216.34          [66.95, 365.73]    7.477e-05    YES
+Laptop Stand vs Mechanical Keyboard           -199.51        [-351.42, -47.59]       0.0007    YES
+Webcam vs Wireless Mouse                       199.02          [46.48, 351.56]       0.0008    YES
+Office Chair vs Webcam                         189.79          [40.27, 339.30]       0.0013    YES
+Mechanical Keyboard vs Office Chair           -172.47        [-318.77, -26.16]       0.0049    YES
+Laptop Stand vs Webcam                        -182.18        [-337.19, -27.18]       0.0051    YES
+Backpack vs Office Chair                      -155.28        [-295.19, -15.38]       0.0125    YES
+Desk Lamp vs Wireless Mouse                    150.27           [5.26, 295.28]       0.0322    YES
+Monitor 24 vs Office Chair                    -141.67          [-287.48, 4.15]       0.0697     no
+Monitor 27 vs Office Chair                    -144.89          [-294.40, 4.63]       0.0717     no
+Desk Lamp vs Laptop Stand                      133.43         [-14.17, 281.04]       0.1455     no
+Monitor 24 vs USB-C Hub                        132.38         [-14.70, 279.47]       0.1515     no
+Monitor 27 vs USB-C Hub                        129.16         [-21.59, 279.92]       0.2316     no
+Backpack vs USB-C Hub                          118.77         [-22.47, 260.00]       0.2677     no
+Laptop Stand vs Notebook Set                   129.94         [-26.20, 286.08]       0.2892     no
+USB-C Hub vs Wireless Mouse                    114.76         [-32.32, 261.84]       0.4395     no
+Notebook Set vs Pen Set                        114.39         [-32.70, 261.49]       0.4478     no
+Notebook Set vs Wireless Mouse                -113.11         [-266.80, 40.58]       0.5890     no
+Mechanical Keyboard vs USB-C Hub               101.58         [-45.99, 249.15]       0.7485     no
+Desk Lamp vs Monitor 24                        -96.87         [-241.88, 48.13]       0.8087     no
+Laptop Stand vs USB-C Hub                      -97.92         [-247.57, 51.72]       0.8450     no
+Desk Lamp vs Monitor 27                        -93.65         [-242.38, 55.08]       0.9002     no
+Backpack vs Desk Lamp                           83.26         [-55.81, 222.33]       0.9494     no
+USB-C Hub vs Webcam                            -84.26         [-235.01, 66.49]       0.9835     no
+Desk Lamp vs Mechanical Keyboard               -66.07         [-211.58, 79.43]       0.9999     no
+Desk Lamp vs Webcam                            -48.75         [-197.48, 99.98]       1.0000     no
+Monitor 24 vs Webcam                            48.12        [-104.41, 200.66]       1.0000     no
+Monitor 27 vs Webcam                            44.90        [-111.18, 200.98]       1.0000     no
+Desk Lamp vs USB-C Hub                          35.51        [-107.62, 178.64]       1.0000     no
+Backpack vs Webcam                              34.51        [-112.40, 181.41]       1.0000     no
+Backpack vs Mechanical Keyboard                 17.18        [-126.45, 160.82]       1.0000     no
+Backpack vs Monitor 24                         -13.62        [-156.75, 129.52]       1.0000     no
+Backpack vs Monitor 27                         -10.40        [-157.30, 136.51]       1.0000     no
+Laptop Stand vs Wireless Mouse                  16.84        [-134.60, 168.27]       1.0000     no
+Mechanical Keyboard vs Monitor 24              -30.80        [-180.19, 118.59]       1.0000     no
+Mechanical Keyboard vs Monitor 27              -27.58        [-180.59, 125.43]       1.0000     no
+Mechanical Keyboard vs Webcam                   17.32        [-135.69, 170.33]       1.0000     no
+Monitor 24 vs Monitor 27                         3.22        [-149.32, 155.76]       1.0000     no
+
+-----------------------------------------------------------
+MEAN COMPARISON SNAPSHOT
+-----------------------------------------------------------
+
+Feature: Urun
+
+  Backpack               Mean Profit = 1522.25
+  Desk Lamp              Mean Profit = 1121.13
+  Laptop Stand           Mean Profit = 700.13
+  Mechanical Keyboard    Mean Profit = 1528.32
+  Monitor 24             Mean Profit = 2047.98
+  Monitor 27             Mean Profit = 2506.92
+  Notebook Set           Mean Profit = 362.09
+  Office Chair           Mean Profit = 3955.54
+  Pen Set                Mean Profit = 164.37
+  USB-C Hub              Mean Profit = 960.16
+  Webcam                 Mean Profit = 1441.93
+  Wireless Mouse         Mean Profit = 594.00
+
+ANOVA p-value            = 9.490e-58
+Permutation ANOVA p-value = 9.999e-05
+Kruskal-Wallis p-value    = 8.902e-72
+eta^2                     = 0.2706
+
+-----------------------------------------------------------
+FINAL INTERPRETATION
+-----------------------------------------------------------
+
+There is statistically significant evidence that Urun is associated with differences in mean profit (classical ANOVA p = 9.490e-58, permutation ANOVA p = 9.999e-05).
+The permutation test confirms that the observed between-group variation is unlikely to have arisen from random group assignment.
+The largest observed sample-mean gap is Office Chair vs Pen Set (difference = 3791.17). A larger sample mean is not by itself a conclusion that one group "earns more"; that claim requires a significant overall test and, when applicable, a significant pairwise interval.
+Urun explains approximately 27.06% of the variance in profit (eta^2 = 0.2706, omega^2 = 0.2619). Statistical significance is not the same as practical importance: with large n, small mean gaps can produce small p-values. Thresholds such as 0.01 / 0.06 / 0.14 are sometimes cited as small / medium / large but are context-dependent and are not applied here as automatic labels.
+Kruskal-Wallis robustness check: H = 366.2244, p = 8.902e-72. This rank test is reported alongside ANOVA; it is not used to overwrite the permutation result.
+Levene test rejected equal variances (p = 1.661e-77). Classical ANOVA p-values should be read with caution; permutation ANOVA remains the primary confirmatory test.
+IQR outliers detected: 36 observations across groups. They were flagged only and were not removed from the analysis.
+Tukey-Kramer found 35 significant pairwise mean difference(s) at alpha = 0.05.
+
+===========================================================
+
+Saving figures to results/Urun
+
+>>> Analysing feature 4/6: Kategori
+
+===========================================================
+FEATURE ANALYSIS: KATEGORI
+===========================================================
+
+Groups:
+  Aksesuar
+  Elektronik
+  Kırtasiye
+  Mobilya
+  Ofis Aksesuarları
+
+Sample sizes:
+  Aksesuar               = 92
+  Elektronik             = 457
+  Kırtasiye              = 164
+  Mobilya                = 85
+  Ofis Aksesuarları      = 160
+
+-----------------------------------------------------------
+DESCRIPTIVE STATISTICS
+-----------------------------------------------------------
+
+Group                       N       Mean     Median        Std                 95% CI
+--------------------------------------------------------------------------------------
+Aksesuar                   92    1522.25    1237.65    1182.03  [  1277.46,   1767.04]
+Elektronik                457    1494.22     914.67    1842.43  [  1324.85,   1663.58]
+Kırtasiye                 164     247.56     162.57     257.04  [   207.93,    287.19]
+Mobilya                    85    3955.54    3029.26    3633.21  [  3171.88,   4739.21]
+Ofis Aksesuarları         160     929.05     653.28     830.58  [   799.36,   1058.73]
+
+Mean +/- std and other moments:
+  Aksesuar: mean+/-std = 1522.25 +/- 1182.03 | var = 1397186.29 | min = 165.41 | max = 6661.99 | Q1 = 667.37 | Q3 = 2082.72 | IQR = 1415.35 | SE = 123.23 | CV = 0.776 | skew = 1.621 | excess kurtosis = 3.548
+  Elektronik: mean+/-std = 1494.22 +/- 1842.43 | var = 3394541.47 | min = -6485.91 | max = 10584.93 | Q1 = 408.92 | Q3 = 2006.31 | IQR = 1597.39 | SE = 86.19 | CV = 1.233 | skew = 1.880 | excess kurtosis = 6.206
+  Kırtasiye: mean+/-std = 247.56 +/- 257.04 | var = 66068.18 | min = 24.92 | max = 1378.86 | Q1 = 79.55 | Q3 = 346.89 | IQR = 267.34 | SE = 20.07 | CV = 1.038 | skew = 2.034 | excess kurtosis = 4.476
+  Mobilya: mean+/-std = 3955.54 +/- 3633.21 | var = 13200209.07 | min = -1094.49 | max = 18397.92 | Q1 = 1255.01 | Q3 = 5424.07 | IQR = 4169.06 | SE = 394.08 | CV = 0.919 | skew = 1.626 | excess kurtosis = 3.127
+  Ofis Aksesuarları: mean+/-std = 929.05 +/- 830.58 | var = 689863.95 | min = 80.20 | max = 4598.18 | Q1 = 310.44 | Q3 = 1246.35 | IQR = 935.91 | SE = 65.66 | CV = 0.894 | skew = 1.575 | excess kurtosis = 2.632
+
+-----------------------------------------------------------
+NORMALITY
+-----------------------------------------------------------
+
+H0: Group data come from a normal distribution.
+H1: Group data do not come from a normal distribution.
+Shapiro-Wilk is not shipped with MATLAB Statistics Toolbox in this environment; 
+
+Anderson-Darling and Lilliefors were used instead.
+
+Group: Aksesuar
+  N = 92
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Elektronik
+  N = 457
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+Group: Kırtasiye
+  N = 164
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Mobilya
+  N = 85
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0036
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Ofis Aksesuarları
+  N = 160
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+
+-----------------------------------------------------------
+OUTLIERS (detected, not removed)
+-----------------------------------------------------------
+
+IQR (Tukey 1.5) primary; |z|>3 supplementary. Detected only, not removed.
+
+Group                       N   IQR outliers      IQR percent        z>3  z>3 percent
+Aksesuar                   92              4            4.35%          1        1.09%
+Elektronik                457             38            8.32%         11        2.41%
+Kırtasiye                 164             11            6.71%          4        2.44%
+Mobilya                    85              4            4.71%          1        1.18%
+Ofis Aksesuarları         160              7            4.38%          2        1.25%
+
+-----------------------------------------------------------
+VARIANCE HOMOGENEITY
+-----------------------------------------------------------
+
+H0: All group variances are equal.
+H1: At least one group variance differs.
+
+Levene's Test (Levene (ANOVA on |y - group mean|))
+  Statistic = 67.2851
+  p-value   = 3.545e-50
+  Decision  = Reject H0
+
+Brown-Forsythe (median version): statistic = 47.9159, p = 9.662e-37, Reject H0
+Bartlett p-value (sensitive to non-normality) = 1.506e-162
+Levene is the primary homogeneity test.
+
+-----------------------------------------------------------
+CLASSICAL ANOVA
+-----------------------------------------------------------
+
+Feature = Kategori
+
+H0: all group means of Kar are equal.
+H1: at least one group mean differs.
+
+Source                   SS       df             MS          F      p-value
+----------------------------------------------------------------------------
+Between      813795286.3991        4 203448821.5998    66.7578    8.024e-50
+Within       2904329903.9644      953   3047565.4816
+Total        3718125190.3636      957
+
+F = 66.7578
+df1 = 4, df2 = 953
+p-value = 8.024e-50
+anova1 cross-check p = 8.024e-50
+Decision = Reject H0
+
+Eta squared  eta^2   = 0.2189
+Omega squared omega^2 = 0.2154
+Interpretation: Kategori explains approximately 21.89% of the variance in profit.
+Effect-size cutoffs (e.g. 0.01/0.06/0.14) are context-dependent; the numeric eta^2/omega^2 values are the quantities to report.
+
+-----------------------------------------------------------
+PERMUTATION ANOVA
+-----------------------------------------------------------
+
+H0: There is no systematic group effect on the profit distribution.
+    Similar F values can arise by chance after shuffling group labels.
+H1: There is a systematic difference among groups.
+
+Permutations     = 10000
+Observed F       = 66.7578
+Mean permuted F  = 1.0062
+95th percentile  = 2.3956
+n(F* >= F_obs)   = 0
+Permutation p    = (nExtreme + 1) / (nPerm + 1) = 9.999e-05
+alpha            = 0.05
+Decision: H0 rejected.
+There is statistically significant evidence that at least one group differs.
+
+-----------------------------------------------------------
+KRUSKAL-WALLIS (robustness check)
+-----------------------------------------------------------
+
+H0: The groups have the same distribution of Kar (equal stochastic dominance / ranks).
+H1: At least one group differs in distribution.
+This is NOT used as an automatic replacement for ANOVA.
+
+H = 303.4023
+df = 4
+p-value = 1.999e-64
+epsilon^2 = 0.3142
+
+-----------------------------------------------------------
+POST-HOC
+-----------------------------------------------------------
+
+Overall test was significant (ANOVA p = 8.024e-50, permutation p = 9.999e-05). Tukey-Kramer pairwise comparisons of means are reported. Levene and/or normality diagnostics suggest caution; Dunn-Sidak pairwise comparisons of ranks are also reported as a complement.
+
+Tukey-Kramer (means)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Elektronik vs Mobilya                        -2461.33     [-3023.82, -1898.84]    0.000e+00    YES
+Kırtasiye vs Mobilya                         -3707.98     [-4344.42, -3071.55]    0.000e+00    YES
+Mobilya vs Ofis Aksesuarları                  3026.50       [2387.35, 3665.64]    0.000e+00    YES
+Aksesuar vs Mobilya                          -2433.29     [-3149.71, -1716.87]    2.624e-20    YES
+Elektronik vs Kırtasiye                       1246.66        [813.19, 1680.12]    2.703e-14    YES
+Aksesuar vs Kırtasiye                         1274.69        [654.41, 1894.98]    2.057e-07    YES
+Elektronik vs Ofis Aksesuarları                565.17        [127.74, 1002.60]       0.0039    YES
+Kırtasiye vs Ofis Aksesuarları                -681.49      [-1210.63, -152.34]       0.0040    YES
+Aksesuar vs Ofis Aksesuarları                  593.21        [-29.86, 1216.27]       0.0709     no
+Aksesuar vs Elektronik                          28.04        [-516.11, 572.19]       0.9999     no
+
+Dunn-Sidak (ranks)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Aksesuar vs Kırtasiye                          412.89         [311.99, 513.80]    0.000e+00    YES
+Elektronik vs Kırtasiye                        347.41         [276.90, 417.92]    0.000e+00    YES
+Kırtasiye vs Mobilya                          -568.18       [-671.71, -464.65]    0.000e+00    YES
+Kırtasiye vs Ofis Aksesuarları                -268.76       [-354.84, -182.68]    0.000e+00    YES
+Mobilya vs Ofis Aksesuarları                   299.42         [195.45, 403.39]    7.772e-15    YES
+Elektronik vs Mobilya                         -220.77       [-312.27, -129.27]    1.432e-10    YES
+Aksesuar vs Ofis Aksesuarları                  144.14          [42.78, 245.49]       0.0007    YES
+Aksesuar vs Mobilya                           -155.28        [-271.83, -38.74]       0.0019    YES
+Elektronik vs Ofis Aksesuarları                 78.65           [7.49, 149.81]       0.0195    YES
+Aksesuar vs Elektronik                          65.49         [-23.03, 154.00]       0.3236     no
+
+-----------------------------------------------------------
+MEAN COMPARISON SNAPSHOT
+-----------------------------------------------------------
+
+Feature: Kategori
+
+  Aksesuar               Mean Profit = 1522.25
+  Elektronik             Mean Profit = 1494.22
+  Kırtasiye              Mean Profit = 247.56
+  Mobilya                Mean Profit = 3955.54
+  Ofis Aksesuarları      Mean Profit = 929.05
+
+ANOVA p-value            = 8.024e-50
+Permutation ANOVA p-value = 9.999e-05
+Kruskal-Wallis p-value    = 1.999e-64
+eta^2                     = 0.2189
+
+-----------------------------------------------------------
+FINAL INTERPRETATION
+-----------------------------------------------------------
+
+There is statistically significant evidence that Kategori is associated with differences in mean profit (classical ANOVA p = 8.024e-50, permutation ANOVA p = 9.999e-05).
+The permutation test confirms that the observed between-group variation is unlikely to have arisen from random group assignment.
+The largest observed sample-mean gap is Mobilya vs Kırtasiye (difference = 3707.98). A larger sample mean is not by itself a conclusion that one group "earns more"; that claim requires a significant overall test and, when applicable, a significant pairwise interval.
+Kategori explains approximately 21.89% of the variance in profit (eta^2 = 0.2189, omega^2 = 0.2154). Statistical significance is not the same as practical importance: with large n, small mean gaps can produce small p-values. Thresholds such as 0.01 / 0.06 / 0.14 are sometimes cited as small / medium / large but are context-dependent and are not applied here as automatic labels.
+Kruskal-Wallis robustness check: H = 303.4023, p = 1.999e-64. This rank test is reported alongside ANOVA; it is not used to overwrite the permutation result.
+Levene test rejected equal variances (p = 3.545e-50). Classical ANOVA p-values should be read with caution; permutation ANOVA remains the primary confirmatory test.
+IQR outliers detected: 64 observations across groups. They were flagged only and were not removed from the analysis.
+Tukey-Kramer found 8 significant pairwise mean difference(s) at alpha = 0.05.
+
+===========================================================
+
+Saving figures to results/Kategori
+
+>>> Analysing feature 5/6: Satis_Kanali
+
+===========================================================
+FEATURE ANALYSIS: SATIS_KANALI
+===========================================================
+
+Groups:
+  Bayi
+  Mağaza
+  Online
+
+Sample sizes:
+  Bayi                   = 130
+  Mağaza                 = 334
+  Online                 = 494
+
+-----------------------------------------------------------
+DESCRIPTIVE STATISTICS
+-----------------------------------------------------------
+
+Group                       N       Mean     Median        Std                 95% CI
+--------------------------------------------------------------------------------------
+Bayi                      130    1286.69     734.05    1689.30  [   993.55,   1579.83]
+Mağaza                    334    1623.14     849.81    2398.58  [  1364.97,   1881.31]
+Online                    494    1293.47     733.95    1691.36  [  1143.95,   1442.99]
+
+Mean +/- std and other moments:
+  Bayi: mean+/-std = 1286.69 +/- 1689.30 | var = 2853733.39 | min = -738.38 | max = 11259.68 | Q1 = 310.35 | Q3 = 1682.51 | IQR = 1372.16 | SE = 148.16 | CV = 1.313 | skew = 3.064 | excess kurtosis = 12.925
+  Mağaza: mean+/-std = 1623.14 +/- 2398.58 | var = 5753195.13 | min = -6485.91 | max = 18397.92 | Q1 = 319.59 | Q3 = 1873.30 | IQR = 1553.71 | SE = 131.24 | CV = 1.478 | skew = 2.955 | excess kurtosis = 12.838
+  Online: mean+/-std = 1293.47 +/- 1691.36 | var = 2860704.95 | min = -3409.68 | max = 13931.30 | Q1 = 284.86 | Q3 = 1667.68 | IQR = 1382.82 | SE = 76.10 | CV = 1.308 | skew = 2.517 | excess kurtosis = 10.064
+
+-----------------------------------------------------------
+NORMALITY
+-----------------------------------------------------------
+
+H0: Group data come from a normal distribution.
+H1: Group data do not come from a normal distribution.
+Shapiro-Wilk is not shipped with MATLAB Statistics Toolbox in this environment; 
+
+Anderson-Darling and Lilliefors were used instead.
+
+Group: Bayi
+  N = 130
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+Group: Mağaza
+  N = 334
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+Group: Online
+  N = 494
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+
+-----------------------------------------------------------
+OUTLIERS (detected, not removed)
+-----------------------------------------------------------
+
+IQR (Tukey 1.5) primary; |z|>3 supplementary. Detected only, not removed.
+
+Group                       N   IQR outliers      IQR percent        z>3  z>3 percent
+Bayi                      130             10            7.69%          2        1.54%
+Mağaza                    334             35           10.48%         11        3.29%
+Online                    494             42            8.50%         10        2.02%
+
+-----------------------------------------------------------
+VARIANCE HOMOGENEITY
+-----------------------------------------------------------
+
+H0: All group variances are equal.
+H1: At least one group variance differs.
+
+Levene's Test (Levene (ANOVA on |y - group mean|))
+  Statistic = 6.0271
+  p-value   = 0.0025
+  Decision  = Reject H0
+
+Brown-Forsythe (median version): statistic = 3.1109, p = 0.0450, Reject H0
+Bartlett p-value (sensitive to non-normality) = 7.940e-13
+Levene is the primary homogeneity test.
+
+-----------------------------------------------------------
+CLASSICAL ANOVA
+-----------------------------------------------------------
+
+Feature = Satis_Kanali
+
+H0: all group means of Kar are equal.
+H1: at least one group mean differs.
+
+Source                   SS       df             MS          F      p-value
+----------------------------------------------------------------------------
+Between       23852062.6396        2  11926031.3198     3.0830       0.0463
+Within       3694273127.7239      955   3868348.8248
+Total        3718125190.3636      957
+
+F = 3.0830
+df1 = 2, df2 = 955
+p-value = 0.0463
+anova1 cross-check p = 0.0463
+Decision = Reject H0
+
+Eta squared  eta^2   = 0.0064
+Omega squared omega^2 = 0.0043
+Interpretation: Satis_Kanali explains approximately 0.64% of the variance in profit.
+Effect-size cutoffs (e.g. 0.01/0.06/0.14) are context-dependent; the numeric eta^2/omega^2 values are the quantities to report.
+
+-----------------------------------------------------------
+PERMUTATION ANOVA
+-----------------------------------------------------------
+
+H0: There is no systematic group effect on the profit distribution.
+    Similar F values can arise by chance after shuffling group labels.
+H1: There is a systematic difference among groups.
+
+Permutations     = 10000
+Observed F       = 3.0830
+Mean permuted F  = 1.0048
+95th percentile  = 3.0424
+n(F* >= F_obs)   = 485
+Permutation p    = (nExtreme + 1) / (nPerm + 1) = 0.0486
+alpha            = 0.05
+Decision: H0 rejected.
+There is statistically significant evidence that at least one group differs.
+
+-----------------------------------------------------------
+KRUSKAL-WALLIS (robustness check)
+-----------------------------------------------------------
+
+H0: The groups have the same distribution of Kar (equal stochastic dominance / ranks).
+H1: At least one group differs in distribution.
+This is NOT used as an automatic replacement for ANOVA.
+
+H = 2.6273
+df = 2
+p-value = 0.2688
+epsilon^2 = 0.0007
+
+-----------------------------------------------------------
+POST-HOC
+-----------------------------------------------------------
+
+Overall test was significant (ANOVA p = 0.0463, permutation p = 0.0486). Tukey-Kramer pairwise comparisons of means are reported. Levene and/or normality diagnostics suggest caution; Dunn-Sidak pairwise comparisons of ranks are also reported as a complement.
+
+Tukey-Kramer (means)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Mağaza vs Online                               329.67           [3.12, 656.22]       0.0472    YES
+Bayi vs Mağaza                                -336.45        [-812.97, 140.06]       0.2228     no
+Bayi vs Online                                  -6.78        [-461.17, 447.60]       0.9993     no
+
+Dunn-Sidak (ranks)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Mağaza vs Online                                30.23          [-16.57, 77.04]       0.3254     no
+Bayi vs Mağaza                                 -31.04          [-99.34, 37.26]       0.6234     no
+Bayi vs Online                                  -0.81          [-65.93, 64.32]       1.0000     no
+
+-----------------------------------------------------------
+MEAN COMPARISON SNAPSHOT
+-----------------------------------------------------------
+
+Feature: Satis_Kanali
+
+  Bayi                   Mean Profit = 1286.69
+  Mağaza                 Mean Profit = 1623.14
+  Online                 Mean Profit = 1293.47
+
+ANOVA p-value            = 0.0463
+Permutation ANOVA p-value = 0.0486
+Kruskal-Wallis p-value    = 0.2688
+eta^2                     = 0.0064
+
+-----------------------------------------------------------
+FINAL INTERPRETATION
+-----------------------------------------------------------
+
+There is statistically significant evidence that Satis_Kanali is associated with differences in mean profit (classical ANOVA p = 0.0463, permutation ANOVA p = 0.0486).
+The permutation test confirms that the observed between-group variation is unlikely to have arisen from random group assignment.
+The largest observed sample-mean gap is Mağaza vs Bayi (difference = 336.45). A larger sample mean is not by itself a conclusion that one group "earns more"; that claim requires a significant overall test and, when applicable, a significant pairwise interval.
+Satis_Kanali explains approximately 0.64% of the variance in profit (eta^2 = 0.0064, omega^2 = 0.0043). Statistical significance is not the same as practical importance: with large n, small mean gaps can produce small p-values. Thresholds such as 0.01 / 0.06 / 0.14 are sometimes cited as small / medium / large but are context-dependent and are not applied here as automatic labels.
+Kruskal-Wallis robustness check: H = 2.6273, p = 0.2688. This rank test is reported alongside ANOVA; it is not used to overwrite the permutation result.
+Levene test rejected equal variances (p = 0.0025). Classical ANOVA p-values should be read with caution; permutation ANOVA remains the primary confirmatory test.
+IQR outliers detected: 87 observations across groups. They were flagged only and were not removed from the analysis.
+Tukey-Kramer found 1 significant pairwise mean difference(s) at alpha = 0.05.
+
+===========================================================
+
+Saving figures to results/Satis_Kanali
+
+>>> Analysing feature 6/6: Musteri_Tipi
+
+===========================================================
+FEATURE ANALYSIS: MUSTERI_TIPI
+===========================================================
+
+Groups:
+  Bireysel
+  KOBI
+  Kurumsal
+
+Sample sizes:
+  Bireysel               = 527
+  KOBI                   = 269
+  Kurumsal               = 162
+
+-----------------------------------------------------------
+DESCRIPTIVE STATISTICS
+-----------------------------------------------------------
+
+Group                       N       Mean     Median        Std                 95% CI
+--------------------------------------------------------------------------------------
+Bireysel                  527    1268.43     685.41    1792.13  [  1115.07,   1421.79]
+KOBI                      269    1305.13     735.61    1824.52  [  1086.11,   1524.16]
+Kurumsal                  162    2029.81    1279.45    2566.96  [  1631.53,   2428.09]
+
+Mean +/- std and other moments:
+  Bireysel: mean+/-std = 1268.43 +/- 1792.13 | var = 3211724.00 | min = -6485.91 | max = 13931.30 | Q1 = 282.30 | Q3 = 1588.52 | IQR = 1306.22 | SE = 78.07 | CV = 1.413 | skew = 2.752 | excess kurtosis = 12.062
+  KOBI: mean+/-std = 1305.13 +/- 1824.52 | var = 3328868.86 | min = -3409.68 | max = 14240.79 | Q1 = 287.15 | Q3 = 1555.75 | IQR = 1268.61 | SE = 111.24 | CV = 1.398 | skew = 2.803 | excess kurtosis = 12.513
+  Kurumsal: mean+/-std = 2029.81 +/- 2566.96 | var = 6589271.16 | min = -808.02 | max = 18397.92 | Q1 = 477.01 | Q3 = 2311.58 | IQR = 1834.57 | SE = 201.68 | CV = 1.265 | skew = 3.017 | excess kurtosis = 12.699
+
+-----------------------------------------------------------
+NORMALITY
+-----------------------------------------------------------
+
+H0: Group data come from a normal distribution.
+H1: Group data do not come from a normal distribution.
+Shapiro-Wilk is not shipped with MATLAB Statistics Toolbox in this environment; 
+
+Anderson-Darling and Lilliefors were used instead.
+
+Group: Bireysel
+  N = 527
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+Group: KOBI
+  N = 269
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  Large n: tests are sensitive to small departures. Use QQ plot together with p.
+
+Group: Kurumsal
+  N = 162
+  Normality test = Anderson-Darling
+  p = 0.0005
+  Lilliefors p = 0.0010
+  Decision = Reject H0
+  H0: normal. H1: not normal. Primary = Anderson-Darling; also Lilliefors.
+
+
+-----------------------------------------------------------
+OUTLIERS (detected, not removed)
+-----------------------------------------------------------
+
+IQR (Tukey 1.5) primary; |z|>3 supplementary. Detected only, not removed.
+
+Group                       N   IQR outliers      IQR percent        z>3  z>3 percent
+Bireysel                  527             45            8.54%         11        2.09%
+KOBI                      269             28           10.41%          6        2.23%
+Kurumsal                  162             18           11.11%          3        1.85%
+
+-----------------------------------------------------------
+VARIANCE HOMOGENEITY
+-----------------------------------------------------------
+
+H0: All group variances are equal.
+H1: At least one group variance differs.
+
+Levene's Test (Levene (ANOVA on |y - group mean|))
+  Statistic = 7.1304
+  p-value   = 0.0008
+  Decision  = Reject H0
+
+Brown-Forsythe (median version): statistic = 5.1159, p = 0.0062, Reject H0
+Bartlett p-value (sensitive to non-normality) = 3.818e-09
+Levene is the primary homogeneity test.
+
+-----------------------------------------------------------
+CLASSICAL ANOVA
+-----------------------------------------------------------
+
+Feature = Musteri_Tipi
+
+H0: all group means of Kar are equal.
+H1: at least one group mean differs.
+
+Source                   SS       df             MS          F      p-value
+----------------------------------------------------------------------------
+Between       75748855.5451        2  37874427.7726     9.9304    5.389e-05
+Within       3642376334.8184      955   3814006.6333
+Total        3718125190.3636      957
+
+F = 9.9304
+df1 = 2, df2 = 955
+p-value = 5.389e-05
+anova1 cross-check p = 5.389e-05
+Decision = Reject H0
+
+Eta squared  eta^2   = 0.0204
+Omega squared omega^2 = 0.0183
+Interpretation: Musteri_Tipi explains approximately 2.04% of the variance in profit.
+Effect-size cutoffs (e.g. 0.01/0.06/0.14) are context-dependent; the numeric eta^2/omega^2 values are the quantities to report.
+
+-----------------------------------------------------------
+PERMUTATION ANOVA
+-----------------------------------------------------------
+
+H0: There is no systematic group effect on the profit distribution.
+    Similar F values can arise by chance after shuffling group labels.
+H1: There is a systematic difference among groups.
+
+Permutations     = 10000
+Observed F       = 9.9304
+Mean permuted F  = 0.9839
+95th percentile  = 2.9161
+n(F* >= F_obs)   = 0
+Permutation p    = (nExtreme + 1) / (nPerm + 1) = 9.999e-05
+alpha            = 0.05
+Decision: H0 rejected.
+There is statistically significant evidence that at least one group differs.
+
+-----------------------------------------------------------
+KRUSKAL-WALLIS (robustness check)
+-----------------------------------------------------------
+
+H0: The groups have the same distribution of Kar (equal stochastic dominance / ranks).
+H1: At least one group differs in distribution.
+This is NOT used as an automatic replacement for ANOVA.
+
+H = 22.3793
+df = 2
+p-value = 1.382e-05
+epsilon^2 = 0.0213
+
+-----------------------------------------------------------
+POST-HOC
+-----------------------------------------------------------
+
+Overall test was significant (ANOVA p = 5.389e-05, permutation p = 9.999e-05). Tukey-Kramer pairwise comparisons of means are reported. Levene and/or normality diagnostics suggest caution; Dunn-Sidak pairwise comparisons of ranks are also reported as a complement.
+
+Tukey-Kramer (means)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Bireysel vs Kurumsal                          -761.38      [-1172.57, -350.19]    4.241e-05    YES
+KOBI vs Kurumsal                              -724.67      [-1179.87, -269.48]       0.0006    YES
+Bireysel vs KOBI                               -36.71        [-379.68, 306.27]       0.9659     no
+
+Dunn-Sidak (ranks)
+Comparison                                  Mean Diff                    CI95%        p-adj    Sig
+----------------------------------------------------------------------------------------------------
+Bireysel vs Kurumsal                          -115.85        [-175.20, -56.49]    9.461e-06    YES
+KOBI vs Kurumsal                              -104.75        [-170.46, -39.05]       0.0004    YES
+Bireysel vs KOBI                               -11.09          [-60.60, 38.41]       0.9324     no
+
+-----------------------------------------------------------
+MEAN COMPARISON SNAPSHOT
+-----------------------------------------------------------
+
+Feature: Musteri_Tipi
+
+  Bireysel               Mean Profit = 1268.43
+  KOBI                   Mean Profit = 1305.13
+  Kurumsal               Mean Profit = 2029.81
+
+ANOVA p-value            = 5.389e-05
+Permutation ANOVA p-value = 9.999e-05
+Kruskal-Wallis p-value    = 1.382e-05
+eta^2                     = 0.0204
+
+-----------------------------------------------------------
+FINAL INTERPRETATION
+-----------------------------------------------------------
+
+There is statistically significant evidence that Musteri_Tipi is associated with differences in mean profit (classical ANOVA p = 5.389e-05, permutation ANOVA p = 9.999e-05).
+The permutation test confirms that the observed between-group variation is unlikely to have arisen from random group assignment.
+The largest observed sample-mean gap is Kurumsal vs Bireysel (difference = 761.38). A larger sample mean is not by itself a conclusion that one group "earns more"; that claim requires a significant overall test and, when applicable, a significant pairwise interval.
+Musteri_Tipi explains approximately 2.04% of the variance in profit (eta^2 = 0.0204, omega^2 = 0.0183). Statistical significance is not the same as practical importance: with large n, small mean gaps can produce small p-values. Thresholds such as 0.01 / 0.06 / 0.14 are sometimes cited as small / medium / large but are context-dependent and are not applied here as automatic labels.
+Kruskal-Wallis robustness check: H = 22.3793, p = 1.382e-05. This rank test is reported alongside ANOVA; it is not used to overwrite the permutation result.
+Levene test rejected equal variances (p = 0.0008). Classical ANOVA p-values should be read with caution; permutation ANOVA remains the primary confirmatory test.
+IQR outliers detected: 91 observations across groups. They were flagged only and were not removed from the analysis.
+Tukey-Kramer found 2 significant pairwise mean difference(s) at alpha = 0.05.
+
+===========================================================
+
+Saving figures to results/Musteri_Tipi
+
+===========================================================
+ALL FEATURES — COMPARISON TABLE
+===========================================================
+
+Feature          Groups        F    ANOVA p     Perm p       KW p    Eta^2   Sig?
+----------------------------------------------------------------------------------------
+Sehir                10    1.143     0.3288     0.3233     0.4192    0.011     no
+Bolge                 6    1.389     0.2259     0.2204     0.3520    0.007     no
+Urun                 12   31.900  9.490e-58  9.999e-05  8.902e-72    0.271    YES
+Kategori              5   66.758  8.024e-50  9.999e-05  1.999e-64    0.219    YES
+Satis_Kanali          3    3.083     0.0463     0.0486     0.2688    0.006     no
+Musteri_Tipi          3    9.930  5.389e-05  9.999e-05  1.382e-05    0.020    YES
+
+Significant? uses Benjamini-Hochberg FDR on permutation p-values (q = 0.05).
+
+-----------------------------------------------------------
+MULTIPLE TESTING (feature-level permutation p-values)
+-----------------------------------------------------------
+
+Six (or fewer) separate overall tests inflate the chance of at least one
+false rejection (family-wise error). Bonferroni controls FWER conservatively.
+Benjamini-Hochberg controls the false discovery rate.
+
+Feature            Raw perm p   Bonferroni p   FDR (BH) p
+----------------------------------------------------------
+Sehir                  0.3233         1.0000       0.3233
+Bolge                  0.2204         1.0000       0.2645
+Urun                9.999e-05         0.0006       0.0002
+Kategori            9.999e-05         0.0006       0.0002
+Satis_Kanali           0.0486         0.2916       0.0729
+Musteri_Tipi        9.999e-05         0.0006       0.0002
+
+===========================================================
+FEATURE IMPORTANCE BASED ON STATISTICAL EVIDENCE
+===========================================================
+
+This ranking is NOT machine-learning feature importance.
+It orders categorical variables by statistical association with Kar:
+  1) FDR-adjusted permutation p-value
+  2) eta^2 (share of variance in Kar associated with the factor)
+  3) agreement between classical ANOVA and permutation ANOVA
+  4) magnitude of the largest observed mean difference
+
+1. Urun
+   Permutation p     = 9.999e-05
+   FDR-adjusted p    = 0.0002
+   ANOVA p           = 9.490e-58
+   Eta^2             = 0.2706
+   Largest mean gap  = 3791.17  (Office Chair vs Pen Set)
+   Classical ANOVA and permutation ANOVA agree on H0 at alpha = 0.05.
+
+2. Kategori
+   Permutation p     = 9.999e-05
+   FDR-adjusted p    = 0.0002
+   ANOVA p           = 8.024e-50
+   Eta^2             = 0.2189
+   Largest mean gap  = 3707.98  (Mobilya vs Kırtasiye)
+   Classical ANOVA and permutation ANOVA agree on H0 at alpha = 0.05.
+
+3. Musteri_Tipi
+   Permutation p     = 9.999e-05
+   FDR-adjusted p    = 0.0002
+   ANOVA p           = 5.389e-05
+   Eta^2             = 0.0204
+   Largest mean gap  = 761.38  (Kurumsal vs Bireysel)
+   Classical ANOVA and permutation ANOVA agree on H0 at alpha = 0.05.
+
+4. Satis_Kanali
+   Permutation p     = 0.0486
+   FDR-adjusted p    = 0.0729
+   ANOVA p           = 0.0463
+   Eta^2             = 0.0064
+   Largest mean gap  = 336.45  (Mağaza vs Bayi)
+   Classical ANOVA and permutation ANOVA agree on H0 at alpha = 0.05.
+
+5. Bolge
+   Permutation p     = 0.2204
+   FDR-adjusted p    = 0.2645
+   ANOVA p           = 0.2259
+   Eta^2             = 0.0072
+   Largest mean gap  = 578.08  (Karadeniz vs Güneydoğu Anadolu)
+   Classical ANOVA and permutation ANOVA agree on H0 at alpha = 0.05.
+
+6. Sehir
+   Permutation p     = 0.3233
+   FDR-adjusted p    = 0.3233
+   ANOVA p           = 0.3288
+   Eta^2             = 0.0107
+   Largest mean gap  = 726.04  (Adana vs Ankara)
+   Classical ANOVA and permutation ANOVA agree on H0 at alpha = 0.05.
+
+===========================================================
+ANSWER TO THE OVERALL QUESTION
+===========================================================
+
+Do the levels of Sehir, Bolge, Urun, Kategori, Satis_Kanali and
+Musteri_Tipi differ in Kar, and is that confirmed by permutation ANOVA?
+
+Sehir:
+  Groups = 10, N = 958
+  Classical ANOVA: F = 1.143, p = 0.3288
+  Permutation ANOVA: p = 0.3233 (10000 permutations)
+  Kruskal-Wallis: H = 9.198, p = 0.4192
+  eta^2 = 0.0107 (about 1.07% of variance in Kar)
+  FDR-adjusted permutation p = 0.3233
+  Unadjusted permutation test: H0 not rejected at alpha = 0.05.
+  After BH-FDR across features: not significant.
+  Pairwise tests were not run (overall tests not significant).
+
+Bolge:
+  Groups = 6, N = 958
+  Classical ANOVA: F = 1.389, p = 0.2259
+  Permutation ANOVA: p = 0.2204 (10000 permutations)
+  Kruskal-Wallis: H = 5.554, p = 0.3520
+  eta^2 = 0.0072 (about 0.72% of variance in Kar)
+  FDR-adjusted permutation p = 0.2645
+  Unadjusted permutation test: H0 not rejected at alpha = 0.05.
+  After BH-FDR across features: not significant.
+  Pairwise tests were not run (overall tests not significant).
+
+Urun:
+  Groups = 12, N = 958
+  Classical ANOVA: F = 31.900, p = 9.490e-58
+  Permutation ANOVA: p = 9.999e-05 (10000 permutations)
+  Kruskal-Wallis: H = 366.224, p = 8.902e-72
+  eta^2 = 0.2706 (about 27.06% of variance in Kar)
+  FDR-adjusted permutation p = 0.0002
+  Unadjusted permutation test: H0 rejected at alpha = 0.05.
+  After BH-FDR across features: still significant.
+  Tukey-Kramer significant pairs:
+    Desk Lamp vs Office Chair : mean diff = -2834.42, p-adj = 0.000e+00
+    Laptop Stand vs Office Chair : mean diff = -3255.41, p-adj = 0.000e+00
+    Notebook Set vs Office Chair : mean diff = -3593.45, p-adj = 0.000e+00
+    Office Chair vs Pen Set : mean diff = 3791.17, p-adj = 0.000e+00
+    Office Chair vs USB-C Hub : mean diff = 2995.39, p-adj = 0.000e+00
+    Office Chair vs Wireless Mouse : mean diff = 3361.55, p-adj = 0.000e+00
+    Backpack vs Office Chair : mean diff = -2433.29, p-adj = 1.961e-21
+    Office Chair vs Webcam : mean diff = 2513.61, p-adj = 9.619e-20
+    ... 27 more pair(s) in posthoc_results.xlsx
+
+Kategori:
+  Groups = 5, N = 958
+  Classical ANOVA: F = 66.758, p = 8.024e-50
+  Permutation ANOVA: p = 9.999e-05 (10000 permutations)
+  Kruskal-Wallis: H = 303.402, p = 1.999e-64
+  eta^2 = 0.2189 (about 21.89% of variance in Kar)
+  FDR-adjusted permutation p = 0.0002
+  Unadjusted permutation test: H0 rejected at alpha = 0.05.
+  After BH-FDR across features: still significant.
+  Tukey-Kramer significant pairs:
+    Elektronik vs Mobilya : mean diff = -2461.33, p-adj = 0.000e+00
+    Kırtasiye vs Mobilya : mean diff = -3707.98, p-adj = 0.000e+00
+    Mobilya vs Ofis Aksesuarları : mean diff = 3026.50, p-adj = 0.000e+00
+    Aksesuar vs Mobilya : mean diff = -2433.29, p-adj = 2.624e-20
+    Elektronik vs Kırtasiye : mean diff = 1246.66, p-adj = 2.703e-14
+    Aksesuar vs Kırtasiye : mean diff = 1274.69, p-adj = 2.057e-07
+    Elektronik vs Ofis Aksesuarları : mean diff = 565.17, p-adj = 0.0039
+    Kırtasiye vs Ofis Aksesuarları : mean diff = -681.49, p-adj = 0.0040
+
+Satis_Kanali:
+  Groups = 3, N = 958
+  Classical ANOVA: F = 3.083, p = 0.0463
+  Permutation ANOVA: p = 0.0486 (10000 permutations)
+  Kruskal-Wallis: H = 2.627, p = 0.2688
+  eta^2 = 0.0064 (about 0.64% of variance in Kar)
+  FDR-adjusted permutation p = 0.0729
+  Unadjusted permutation test: H0 rejected at alpha = 0.05.
+  After BH-FDR across features: no longer significant.
+  Tukey-Kramer significant pairs:
+    Mağaza vs Online : mean diff = 329.67, p-adj = 0.0472
+
+Musteri_Tipi:
+  Groups = 3, N = 958
+  Classical ANOVA: F = 9.930, p = 5.389e-05
+  Permutation ANOVA: p = 9.999e-05 (10000 permutations)
+  Kruskal-Wallis: H = 22.379, p = 1.382e-05
+  eta^2 = 0.0204 (about 2.04% of variance in Kar)
+  FDR-adjusted permutation p = 0.0002
+  Unadjusted permutation test: H0 rejected at alpha = 0.05.
+  After BH-FDR across features: still significant.
+  Tukey-Kramer significant pairs:
+    Bireysel vs Kurumsal : mean diff = -761.38, p-adj = 4.241e-05
+    KOBI vs Kurumsal : mean diff = -724.67, p-adj = 0.0006
+
+
+Figures: results/<Feature>/*.png
+Text report: results/command_window_report.txt
+Done.
