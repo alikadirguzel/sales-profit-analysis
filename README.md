@@ -1,5 +1,7 @@
 # Sales Profit Analysis
 
+![Social preview](reports/figures/social_preview.png)
+
 Quote-time profit prediction and categorical inference on **958 synthetic retail orders** (Jan–Jun 2026). The model estimates `Profit` from information known when the order is placed — product, city, channel, quantity, list price, discount — **without unit cost or post-sale accounting fields**.
 
 Everything runs **offline**. No API keys, tokens, or cloud calls.
